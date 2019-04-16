@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace FifaProject.Properties
+namespace ProjectFifa.Properties
 {
 
 
