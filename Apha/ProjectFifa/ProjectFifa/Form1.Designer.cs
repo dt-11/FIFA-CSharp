@@ -48,6 +48,15 @@
             this.selectedPoolLabel = new System.Windows.Forms.Label();
             this.matchLabel1 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.matchLabel10 = new System.Windows.Forms.Label();
+            this.matchLabel11 = new System.Windows.Forms.Label();
+            this.matchLabel12 = new System.Windows.Forms.Label();
+            this.matchLabel9 = new System.Windows.Forms.Label();
+            this.matchLabel8 = new System.Windows.Forms.Label();
+            this.matchLabel7 = new System.Windows.Forms.Label();
+            this.matchLabel13 = new System.Windows.Forms.Label();
+            this.matchLabel14 = new System.Windows.Forms.Label();
+            this.matchLabel15 = new System.Windows.Forms.Label();
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -160,6 +169,15 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.matchLabel13);
+            this.groupBox1.Controls.Add(this.matchLabel14);
+            this.groupBox1.Controls.Add(this.matchLabel15);
+            this.groupBox1.Controls.Add(this.matchLabel10);
+            this.groupBox1.Controls.Add(this.matchLabel11);
+            this.groupBox1.Controls.Add(this.matchLabel12);
+            this.groupBox1.Controls.Add(this.matchLabel9);
+            this.groupBox1.Controls.Add(this.matchLabel8);
+            this.groupBox1.Controls.Add(this.matchLabel7);
             this.groupBox1.Controls.Add(this.matchLabel4);
             this.groupBox1.Controls.Add(this.matchLabel5);
             this.groupBox1.Controls.Add(this.matchLabel6);
@@ -169,7 +187,7 @@
             this.groupBox1.Controls.Add(this.matchLabel1);
             this.groupBox1.Location = new System.Drawing.Point(12, 64);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(243, 313);
+            this.groupBox1.Size = new System.Drawing.Size(243, 731);
             this.groupBox1.TabIndex = 15;
             this.groupBox1.TabStop = false;
             // 
@@ -247,11 +265,92 @@
             this.label1.TabIndex = 14;
             this.label1.Text = "Gokkers";
             // 
+            // matchLabel10
+            // 
+            this.matchLabel10.AutoSize = true;
+            this.matchLabel10.Location = new System.Drawing.Point(6, 465);
+            this.matchLabel10.Name = "matchLabel10";
+            this.matchLabel10.Size = new System.Drawing.Size(43, 13);
+            this.matchLabel10.TabIndex = 26;
+            this.matchLabel10.Text = "Match1";
+            // 
+            // matchLabel11
+            // 
+            this.matchLabel11.AutoSize = true;
+            this.matchLabel11.Location = new System.Drawing.Point(6, 514);
+            this.matchLabel11.Name = "matchLabel11";
+            this.matchLabel11.Size = new System.Drawing.Size(43, 13);
+            this.matchLabel11.TabIndex = 25;
+            this.matchLabel11.Text = "Match1";
+            // 
+            // matchLabel12
+            // 
+            this.matchLabel12.AutoSize = true;
+            this.matchLabel12.Location = new System.Drawing.Point(3, 561);
+            this.matchLabel12.Name = "matchLabel12";
+            this.matchLabel12.Size = new System.Drawing.Size(43, 13);
+            this.matchLabel12.TabIndex = 24;
+            this.matchLabel12.Text = "Match1";
+            // 
+            // matchLabel9
+            // 
+            this.matchLabel9.AutoSize = true;
+            this.matchLabel9.Location = new System.Drawing.Point(6, 420);
+            this.matchLabel9.Name = "matchLabel9";
+            this.matchLabel9.Size = new System.Drawing.Size(43, 13);
+            this.matchLabel9.TabIndex = 23;
+            this.matchLabel9.Text = "Match1";
+            // 
+            // matchLabel8
+            // 
+            this.matchLabel8.AutoSize = true;
+            this.matchLabel8.Location = new System.Drawing.Point(6, 375);
+            this.matchLabel8.Name = "matchLabel8";
+            this.matchLabel8.Size = new System.Drawing.Size(43, 13);
+            this.matchLabel8.TabIndex = 22;
+            this.matchLabel8.Text = "Match1";
+            // 
+            // matchLabel7
+            // 
+            this.matchLabel7.AutoSize = true;
+            this.matchLabel7.Location = new System.Drawing.Point(3, 327);
+            this.matchLabel7.Name = "matchLabel7";
+            this.matchLabel7.Size = new System.Drawing.Size(43, 13);
+            this.matchLabel7.TabIndex = 21;
+            this.matchLabel7.Text = "Match1";
+            // 
+            // matchLabel13
+            // 
+            this.matchLabel13.AutoSize = true;
+            this.matchLabel13.Location = new System.Drawing.Point(6, 606);
+            this.matchLabel13.Name = "matchLabel13";
+            this.matchLabel13.Size = new System.Drawing.Size(43, 13);
+            this.matchLabel13.TabIndex = 29;
+            this.matchLabel13.Text = "Match1";
+            // 
+            // matchLabel14
+            // 
+            this.matchLabel14.AutoSize = true;
+            this.matchLabel14.Location = new System.Drawing.Point(6, 655);
+            this.matchLabel14.Name = "matchLabel14";
+            this.matchLabel14.Size = new System.Drawing.Size(43, 13);
+            this.matchLabel14.TabIndex = 28;
+            this.matchLabel14.Text = "Match1";
+            // 
+            // matchLabel15
+            // 
+            this.matchLabel15.AutoSize = true;
+            this.matchLabel15.Location = new System.Drawing.Point(3, 702);
+            this.matchLabel15.Name = "matchLabel15";
+            this.matchLabel15.Size = new System.Drawing.Size(43, 13);
+            this.matchLabel15.TabIndex = 27;
+            this.matchLabel15.Text = "Match1";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(486, 384);
+            this.ClientSize = new System.Drawing.Size(486, 800);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.poolButton);
@@ -291,6 +390,15 @@
         private System.Windows.Forms.Label selectedPoolLabel;
         private System.Windows.Forms.Label matchLabel1;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label matchLabel13;
+        private System.Windows.Forms.Label matchLabel14;
+        private System.Windows.Forms.Label matchLabel15;
+        private System.Windows.Forms.Label matchLabel10;
+        private System.Windows.Forms.Label matchLabel11;
+        private System.Windows.Forms.Label matchLabel12;
+        private System.Windows.Forms.Label matchLabel9;
+        private System.Windows.Forms.Label matchLabel8;
+        private System.Windows.Forms.Label matchLabel7;
     }
 }
 

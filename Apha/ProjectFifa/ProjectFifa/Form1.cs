@@ -16,5 +16,11 @@ namespace ProjectFifa
         {
             InitializeComponent();
         }
+        public void teams()
+        {
+            System.Net.WebClient downloader = new System.Net.WebClient();
+            string teamjson;
+
+        }
     }
 }
