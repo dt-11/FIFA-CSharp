@@ -22,12 +22,10 @@ namespace ProjectFifa
             System.Net.WebClient downloader = new System.Net.WebClient();
             string teamjson;
 
-            teamjson = downloader.DownloadString("http://localhost/test/FIFA-PHP/test.php");
+            teamjson = downloader.DownloadString("http://localhost/fifa/API.php");
 
             team[] team = JsonConvert.DeserializeObject<team[]>(teamjson);
 
-           // matchLabel1.Text = team[0].teamName;
-           // matchLabel2.Text = team[1].teamName;
         }
 
         private void Form1_Load(object sender, EventArgs e)
