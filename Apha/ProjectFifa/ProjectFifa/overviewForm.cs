@@ -11,11 +11,15 @@ using Newtonsoft.Json;
 
 namespace ProjectFifa
 {
-    public partial class Form1 : Form
+    public partial class overviewForm : Form
     {
-        public Form1()
+        public overviewForm()
         {
             InitializeComponent();
+        }
+        private void overviewForm_Load(object sender, EventArgs e)
+        {
+            teams();
         }
         public void teams()
         {
@@ -26,19 +30,15 @@ namespace ProjectFifa
 
             team[] team = JsonConvert.DeserializeObject<team[]>(teamjson);
 
-           // matchLabel1.Text = team[0].teamName;
-           // matchLabel2.Text = team[1].teamName;
+            for (int i = 0; i < team.Length; i++)
+            {
+                teamListBox.Items.Add(team[i].teamName);
+            }
         }
 
-        private void Form1_Load(object sender, EventArgs e)
+        private void overviewToFormButton_Click(object sender, EventArgs e)
         {
-            teams();
-        }
-
-        private void overviewButton_Click(object sender, EventArgs e)
-        {
-            overviewForm form2 = new overviewForm();
-            form2.ShowDialog();
+            Close();
         }
     }
 }

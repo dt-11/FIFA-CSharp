@@ -29,17 +29,18 @@
         private void InitializeComponent()
         {
             this.label3 = new System.Windows.Forms.Label();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.betsOnAmount6 = new System.Windows.Forms.Label();
-            this.betsOnAmount5 = new System.Windows.Forms.Label();
-            this.betsOnAmount4 = new System.Windows.Forms.Label();
-            this.betsOnAmount3 = new System.Windows.Forms.Label();
-            this.betsOnAmount2 = new System.Windows.Forms.Label();
-            this.betsOnAmount1 = new System.Windows.Forms.Label();
             this.poolButton = new System.Windows.Forms.Button();
             this.selectPouleDomain = new System.Windows.Forms.DomainUpDown();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.matchLabel13 = new System.Windows.Forms.Label();
+            this.matchLabel14 = new System.Windows.Forms.Label();
+            this.matchLabel15 = new System.Windows.Forms.Label();
+            this.matchLabel10 = new System.Windows.Forms.Label();
+            this.matchLabel11 = new System.Windows.Forms.Label();
+            this.matchLabel12 = new System.Windows.Forms.Label();
+            this.matchLabel9 = new System.Windows.Forms.Label();
+            this.matchLabel8 = new System.Windows.Forms.Label();
+            this.matchLabel7 = new System.Windows.Forms.Label();
             this.matchLabel4 = new System.Windows.Forms.Label();
             this.matchLabel5 = new System.Windows.Forms.Label();
             this.matchLabel6 = new System.Windows.Forms.Label();
@@ -48,17 +49,18 @@
             this.selectedPoolLabel = new System.Windows.Forms.Label();
             this.matchLabel1 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.matchLabel10 = new System.Windows.Forms.Label();
-            this.matchLabel11 = new System.Windows.Forms.Label();
-            this.matchLabel12 = new System.Windows.Forms.Label();
-            this.matchLabel9 = new System.Windows.Forms.Label();
-            this.matchLabel8 = new System.Windows.Forms.Label();
-            this.matchLabel7 = new System.Windows.Forms.Label();
-            this.matchLabel13 = new System.Windows.Forms.Label();
-            this.matchLabel14 = new System.Windows.Forms.Label();
-            this.matchLabel15 = new System.Windows.Forms.Label();
-            this.groupBox2.SuspendLayout();
+            this.betsOnAmount1 = new System.Windows.Forms.Label();
+            this.betsOnAmount2 = new System.Windows.Forms.Label();
+            this.betsOnAmount3 = new System.Windows.Forms.Label();
+            this.betsOnAmount4 = new System.Windows.Forms.Label();
+            this.betsOnAmount5 = new System.Windows.Forms.Label();
+            this.betsOnAmount6 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.teamOverviewButton = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
+            this.groupBox2.SuspendLayout();
             this.SuspendLayout();
             // 
             // label3
@@ -70,85 +72,6 @@
             this.label3.Size = new System.Drawing.Size(48, 16);
             this.label3.TabIndex = 19;
             this.label3.Text = "Poule";
-            // 
-            // groupBox2
-            // 
-            this.groupBox2.Controls.Add(this.label2);
-            this.groupBox2.Controls.Add(this.betsOnAmount6);
-            this.groupBox2.Controls.Add(this.betsOnAmount5);
-            this.groupBox2.Controls.Add(this.betsOnAmount4);
-            this.groupBox2.Controls.Add(this.betsOnAmount3);
-            this.groupBox2.Controls.Add(this.betsOnAmount2);
-            this.groupBox2.Controls.Add(this.betsOnAmount1);
-            this.groupBox2.Location = new System.Drawing.Point(274, 64);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(203, 313);
-            this.groupBox2.TabIndex = 18;
-            this.groupBox2.TabStop = false;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold);
-            this.label2.Location = new System.Drawing.Point(7, 10);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(108, 16);
-            this.label2.TabIndex = 6;
-            this.label2.Text = "Gokken Status";
-            // 
-            // betsOnAmount6
-            // 
-            this.betsOnAmount6.AutoSize = true;
-            this.betsOnAmount6.Location = new System.Drawing.Point(7, 279);
-            this.betsOnAmount6.Name = "betsOnAmount6";
-            this.betsOnAmount6.Size = new System.Drawing.Size(35, 13);
-            this.betsOnAmount6.TabIndex = 5;
-            this.betsOnAmount6.Text = "label2";
-            // 
-            // betsOnAmount5
-            // 
-            this.betsOnAmount5.AutoSize = true;
-            this.betsOnAmount5.Location = new System.Drawing.Point(7, 232);
-            this.betsOnAmount5.Name = "betsOnAmount5";
-            this.betsOnAmount5.Size = new System.Drawing.Size(35, 13);
-            this.betsOnAmount5.TabIndex = 4;
-            this.betsOnAmount5.Text = "label2";
-            // 
-            // betsOnAmount4
-            // 
-            this.betsOnAmount4.AutoSize = true;
-            this.betsOnAmount4.Location = new System.Drawing.Point(7, 183);
-            this.betsOnAmount4.Name = "betsOnAmount4";
-            this.betsOnAmount4.Size = new System.Drawing.Size(35, 13);
-            this.betsOnAmount4.TabIndex = 3;
-            this.betsOnAmount4.Text = "label2";
-            // 
-            // betsOnAmount3
-            // 
-            this.betsOnAmount3.AutoSize = true;
-            this.betsOnAmount3.Location = new System.Drawing.Point(7, 138);
-            this.betsOnAmount3.Name = "betsOnAmount3";
-            this.betsOnAmount3.Size = new System.Drawing.Size(35, 13);
-            this.betsOnAmount3.TabIndex = 2;
-            this.betsOnAmount3.Text = "label2";
-            // 
-            // betsOnAmount2
-            // 
-            this.betsOnAmount2.AutoSize = true;
-            this.betsOnAmount2.Location = new System.Drawing.Point(6, 93);
-            this.betsOnAmount2.Name = "betsOnAmount2";
-            this.betsOnAmount2.Size = new System.Drawing.Size(35, 13);
-            this.betsOnAmount2.TabIndex = 1;
-            this.betsOnAmount2.Text = "label2";
-            // 
-            // betsOnAmount1
-            // 
-            this.betsOnAmount1.AutoSize = true;
-            this.betsOnAmount1.Location = new System.Drawing.Point(7, 45);
-            this.betsOnAmount1.Name = "betsOnAmount1";
-            this.betsOnAmount1.Size = new System.Drawing.Size(35, 13);
-            this.betsOnAmount1.TabIndex = 0;
-            this.betsOnAmount1.Text = "label2";
             // 
             // poolButton
             // 
@@ -190,6 +113,87 @@
             this.groupBox1.Size = new System.Drawing.Size(243, 731);
             this.groupBox1.TabIndex = 15;
             this.groupBox1.TabStop = false;
+            // 
+            // matchLabel13
+            // 
+            this.matchLabel13.AutoSize = true;
+            this.matchLabel13.Location = new System.Drawing.Point(6, 606);
+            this.matchLabel13.Name = "matchLabel13";
+            this.matchLabel13.Size = new System.Drawing.Size(43, 13);
+            this.matchLabel13.TabIndex = 29;
+            this.matchLabel13.Text = "Match1";
+            // 
+            // matchLabel14
+            // 
+            this.matchLabel14.AutoSize = true;
+            this.matchLabel14.Location = new System.Drawing.Point(6, 655);
+            this.matchLabel14.Name = "matchLabel14";
+            this.matchLabel14.Size = new System.Drawing.Size(43, 13);
+            this.matchLabel14.TabIndex = 28;
+            this.matchLabel14.Text = "Match1";
+            // 
+            // matchLabel15
+            // 
+            this.matchLabel15.AutoSize = true;
+            this.matchLabel15.Location = new System.Drawing.Point(3, 702);
+            this.matchLabel15.Name = "matchLabel15";
+            this.matchLabel15.Size = new System.Drawing.Size(43, 13);
+            this.matchLabel15.TabIndex = 27;
+            this.matchLabel15.Text = "Match1";
+            // 
+            // matchLabel10
+            // 
+            this.matchLabel10.AutoSize = true;
+            this.matchLabel10.Location = new System.Drawing.Point(6, 465);
+            this.matchLabel10.Name = "matchLabel10";
+            this.matchLabel10.Size = new System.Drawing.Size(43, 13);
+            this.matchLabel10.TabIndex = 26;
+            this.matchLabel10.Text = "Match1";
+            // 
+            // matchLabel11
+            // 
+            this.matchLabel11.AutoSize = true;
+            this.matchLabel11.Location = new System.Drawing.Point(6, 514);
+            this.matchLabel11.Name = "matchLabel11";
+            this.matchLabel11.Size = new System.Drawing.Size(43, 13);
+            this.matchLabel11.TabIndex = 25;
+            this.matchLabel11.Text = "Match1";
+            // 
+            // matchLabel12
+            // 
+            this.matchLabel12.AutoSize = true;
+            this.matchLabel12.Location = new System.Drawing.Point(3, 561);
+            this.matchLabel12.Name = "matchLabel12";
+            this.matchLabel12.Size = new System.Drawing.Size(43, 13);
+            this.matchLabel12.TabIndex = 24;
+            this.matchLabel12.Text = "Match1";
+            // 
+            // matchLabel9
+            // 
+            this.matchLabel9.AutoSize = true;
+            this.matchLabel9.Location = new System.Drawing.Point(6, 420);
+            this.matchLabel9.Name = "matchLabel9";
+            this.matchLabel9.Size = new System.Drawing.Size(43, 13);
+            this.matchLabel9.TabIndex = 23;
+            this.matchLabel9.Text = "Match1";
+            // 
+            // matchLabel8
+            // 
+            this.matchLabel8.AutoSize = true;
+            this.matchLabel8.Location = new System.Drawing.Point(6, 375);
+            this.matchLabel8.Name = "matchLabel8";
+            this.matchLabel8.Size = new System.Drawing.Size(43, 13);
+            this.matchLabel8.TabIndex = 22;
+            this.matchLabel8.Text = "Match1";
+            // 
+            // matchLabel7
+            // 
+            this.matchLabel7.AutoSize = true;
+            this.matchLabel7.Location = new System.Drawing.Point(3, 327);
+            this.matchLabel7.Name = "matchLabel7";
+            this.matchLabel7.Size = new System.Drawing.Size(43, 13);
+            this.matchLabel7.TabIndex = 21;
+            this.matchLabel7.Text = "Match1";
             // 
             // matchLabel4
             // 
@@ -265,92 +269,112 @@
             this.label1.TabIndex = 14;
             this.label1.Text = "Gokkers";
             // 
-            // matchLabel10
+            // betsOnAmount1
             // 
-            this.matchLabel10.AutoSize = true;
-            this.matchLabel10.Location = new System.Drawing.Point(6, 465);
-            this.matchLabel10.Name = "matchLabel10";
-            this.matchLabel10.Size = new System.Drawing.Size(43, 13);
-            this.matchLabel10.TabIndex = 26;
-            this.matchLabel10.Text = "Match1";
+            this.betsOnAmount1.AutoSize = true;
+            this.betsOnAmount1.Location = new System.Drawing.Point(7, 45);
+            this.betsOnAmount1.Name = "betsOnAmount1";
+            this.betsOnAmount1.Size = new System.Drawing.Size(35, 13);
+            this.betsOnAmount1.TabIndex = 0;
+            this.betsOnAmount1.Text = "label2";
             // 
-            // matchLabel11
+            // betsOnAmount2
             // 
-            this.matchLabel11.AutoSize = true;
-            this.matchLabel11.Location = new System.Drawing.Point(6, 514);
-            this.matchLabel11.Name = "matchLabel11";
-            this.matchLabel11.Size = new System.Drawing.Size(43, 13);
-            this.matchLabel11.TabIndex = 25;
-            this.matchLabel11.Text = "Match1";
+            this.betsOnAmount2.AutoSize = true;
+            this.betsOnAmount2.Location = new System.Drawing.Point(6, 93);
+            this.betsOnAmount2.Name = "betsOnAmount2";
+            this.betsOnAmount2.Size = new System.Drawing.Size(35, 13);
+            this.betsOnAmount2.TabIndex = 1;
+            this.betsOnAmount2.Text = "label2";
             // 
-            // matchLabel12
+            // betsOnAmount3
             // 
-            this.matchLabel12.AutoSize = true;
-            this.matchLabel12.Location = new System.Drawing.Point(3, 561);
-            this.matchLabel12.Name = "matchLabel12";
-            this.matchLabel12.Size = new System.Drawing.Size(43, 13);
-            this.matchLabel12.TabIndex = 24;
-            this.matchLabel12.Text = "Match1";
+            this.betsOnAmount3.AutoSize = true;
+            this.betsOnAmount3.Location = new System.Drawing.Point(7, 138);
+            this.betsOnAmount3.Name = "betsOnAmount3";
+            this.betsOnAmount3.Size = new System.Drawing.Size(35, 13);
+            this.betsOnAmount3.TabIndex = 2;
+            this.betsOnAmount3.Text = "label2";
             // 
-            // matchLabel9
+            // betsOnAmount4
             // 
-            this.matchLabel9.AutoSize = true;
-            this.matchLabel9.Location = new System.Drawing.Point(6, 420);
-            this.matchLabel9.Name = "matchLabel9";
-            this.matchLabel9.Size = new System.Drawing.Size(43, 13);
-            this.matchLabel9.TabIndex = 23;
-            this.matchLabel9.Text = "Match1";
+            this.betsOnAmount4.AutoSize = true;
+            this.betsOnAmount4.Location = new System.Drawing.Point(7, 183);
+            this.betsOnAmount4.Name = "betsOnAmount4";
+            this.betsOnAmount4.Size = new System.Drawing.Size(35, 13);
+            this.betsOnAmount4.TabIndex = 3;
+            this.betsOnAmount4.Text = "label2";
             // 
-            // matchLabel8
+            // betsOnAmount5
             // 
-            this.matchLabel8.AutoSize = true;
-            this.matchLabel8.Location = new System.Drawing.Point(6, 375);
-            this.matchLabel8.Name = "matchLabel8";
-            this.matchLabel8.Size = new System.Drawing.Size(43, 13);
-            this.matchLabel8.TabIndex = 22;
-            this.matchLabel8.Text = "Match1";
+            this.betsOnAmount5.AutoSize = true;
+            this.betsOnAmount5.Location = new System.Drawing.Point(7, 232);
+            this.betsOnAmount5.Name = "betsOnAmount5";
+            this.betsOnAmount5.Size = new System.Drawing.Size(35, 13);
+            this.betsOnAmount5.TabIndex = 4;
+            this.betsOnAmount5.Text = "label2";
             // 
-            // matchLabel7
+            // betsOnAmount6
             // 
-            this.matchLabel7.AutoSize = true;
-            this.matchLabel7.Location = new System.Drawing.Point(3, 327);
-            this.matchLabel7.Name = "matchLabel7";
-            this.matchLabel7.Size = new System.Drawing.Size(43, 13);
-            this.matchLabel7.TabIndex = 21;
-            this.matchLabel7.Text = "Match1";
+            this.betsOnAmount6.AutoSize = true;
+            this.betsOnAmount6.Location = new System.Drawing.Point(7, 279);
+            this.betsOnAmount6.Name = "betsOnAmount6";
+            this.betsOnAmount6.Size = new System.Drawing.Size(35, 13);
+            this.betsOnAmount6.TabIndex = 5;
+            this.betsOnAmount6.Text = "label2";
             // 
-            // matchLabel13
+            // label2
             // 
-            this.matchLabel13.AutoSize = true;
-            this.matchLabel13.Location = new System.Drawing.Point(6, 606);
-            this.matchLabel13.Name = "matchLabel13";
-            this.matchLabel13.Size = new System.Drawing.Size(43, 13);
-            this.matchLabel13.TabIndex = 29;
-            this.matchLabel13.Text = "Match1";
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold);
+            this.label2.Location = new System.Drawing.Point(7, 10);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(108, 16);
+            this.label2.TabIndex = 6;
+            this.label2.Text = "Gokken Status";
             // 
-            // matchLabel14
+            // groupBox2
             // 
-            this.matchLabel14.AutoSize = true;
-            this.matchLabel14.Location = new System.Drawing.Point(6, 655);
-            this.matchLabel14.Name = "matchLabel14";
-            this.matchLabel14.Size = new System.Drawing.Size(43, 13);
-            this.matchLabel14.TabIndex = 28;
-            this.matchLabel14.Text = "Match1";
+            this.groupBox2.Controls.Add(this.label4);
+            this.groupBox2.Controls.Add(this.label2);
+            this.groupBox2.Controls.Add(this.betsOnAmount6);
+            this.groupBox2.Controls.Add(this.betsOnAmount5);
+            this.groupBox2.Controls.Add(this.betsOnAmount4);
+            this.groupBox2.Controls.Add(this.betsOnAmount3);
+            this.groupBox2.Controls.Add(this.betsOnAmount2);
+            this.groupBox2.Controls.Add(this.betsOnAmount1);
+            this.groupBox2.Location = new System.Drawing.Point(274, 64);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(203, 313);
+            this.groupBox2.TabIndex = 18;
+            this.groupBox2.TabStop = false;
             // 
-            // matchLabel15
+            // label4
             // 
-            this.matchLabel15.AutoSize = true;
-            this.matchLabel15.Location = new System.Drawing.Point(3, 702);
-            this.matchLabel15.Name = "matchLabel15";
-            this.matchLabel15.Size = new System.Drawing.Size(43, 13);
-            this.matchLabel15.TabIndex = 27;
-            this.matchLabel15.Text = "Match1";
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 39.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(39, 122);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(130, 61);
+            this.label4.TabIndex = 20;
+            this.label4.Text = "WIP";
+            // 
+            // teamOverviewButton
+            // 
+            this.teamOverviewButton.Location = new System.Drawing.Point(12, 40);
+            this.teamOverviewButton.Name = "teamOverviewButton";
+            this.teamOverviewButton.Size = new System.Drawing.Size(92, 23);
+            this.teamOverviewButton.TabIndex = 20;
+            this.teamOverviewButton.Text = "Team Overview";
+            this.teamOverviewButton.UseVisualStyleBackColor = true;
+            this.teamOverviewButton.Click += new System.EventHandler(this.overviewButton_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(486, 800);
+            this.Controls.Add(this.teamOverviewButton);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.poolButton);
@@ -359,10 +383,11 @@
             this.Controls.Add(this.label1);
             this.Name = "Form1";
             this.Text = "Form1";
-            this.groupBox2.ResumeLayout(false);
-            this.groupBox2.PerformLayout();
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            this.groupBox2.ResumeLayout(false);
+            this.groupBox2.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -371,14 +396,6 @@
         #endregion
 
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label betsOnAmount6;
-        private System.Windows.Forms.Label betsOnAmount5;
-        private System.Windows.Forms.Label betsOnAmount4;
-        private System.Windows.Forms.Label betsOnAmount3;
-        private System.Windows.Forms.Label betsOnAmount2;
-        private System.Windows.Forms.Label betsOnAmount1;
         private System.Windows.Forms.Button poolButton;
         private System.Windows.Forms.DomainUpDown selectPouleDomain;
         private System.Windows.Forms.GroupBox groupBox1;
@@ -399,6 +416,16 @@
         private System.Windows.Forms.Label matchLabel9;
         private System.Windows.Forms.Label matchLabel8;
         private System.Windows.Forms.Label matchLabel7;
+        private System.Windows.Forms.Label betsOnAmount1;
+        private System.Windows.Forms.Label betsOnAmount2;
+        private System.Windows.Forms.Label betsOnAmount3;
+        private System.Windows.Forms.Label betsOnAmount4;
+        private System.Windows.Forms.Label betsOnAmount5;
+        private System.Windows.Forms.Label betsOnAmount6;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Button teamOverviewButton;
     }
 }
 
