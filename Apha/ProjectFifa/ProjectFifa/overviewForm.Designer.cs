@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(overviewForm));
             this.teamListBox = new System.Windows.Forms.ListBox();
             this.label1 = new System.Windows.Forms.Label();
             this.overviewToFormButton = new System.Windows.Forms.Button();
@@ -35,6 +36,8 @@
             // 
             // teamListBox
             // 
+            this.teamListBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
             this.teamListBox.FormattingEnabled = true;
             this.teamListBox.Location = new System.Drawing.Point(12, 51);
             this.teamListBox.Name = "teamListBox";
@@ -44,6 +47,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold);
             this.label1.Location = new System.Drawing.Point(8, 9);
             this.label1.Name = "label1";
@@ -53,6 +57,7 @@
             // 
             // overviewToFormButton
             // 
+            this.overviewToFormButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.overviewToFormButton.Location = new System.Drawing.Point(12, 266);
             this.overviewToFormButton.Name = "overviewToFormButton";
             this.overviewToFormButton.Size = new System.Drawing.Size(75, 23);
@@ -65,6 +70,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(208, 301);
             this.Controls.Add(this.overviewToFormButton);
             this.Controls.Add(this.label1);
