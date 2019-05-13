@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.label3 = new System.Windows.Forms.Label();
             this.poolButton = new System.Windows.Forms.Button();
             this.selectPouleDomain = new System.Windows.Forms.DomainUpDown();
@@ -67,26 +68,29 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold);
-            this.label3.Location = new System.Drawing.Point(276, 19);
+            this.label3.Location = new System.Drawing.Point(368, 27);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(48, 16);
+            this.label3.Size = new System.Drawing.Size(56, 20);
             this.label3.TabIndex = 19;
             this.label3.Text = "Poule";
             // 
             // poolButton
             // 
-            this.poolButton.Location = new System.Drawing.Point(422, 35);
+            this.poolButton.Location = new System.Drawing.Point(563, 48);
+            this.poolButton.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.poolButton.Name = "poolButton";
-            this.poolButton.Size = new System.Drawing.Size(55, 23);
+            this.poolButton.Size = new System.Drawing.Size(73, 31);
             this.poolButton.TabIndex = 17;
             this.poolButton.Text = "Go";
             this.poolButton.UseVisualStyleBackColor = true;
             // 
             // selectPouleDomain
             // 
-            this.selectPouleDomain.Location = new System.Drawing.Point(279, 38);
+            this.selectPouleDomain.Location = new System.Drawing.Point(372, 53);
+            this.selectPouleDomain.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.selectPouleDomain.Name = "selectPouleDomain";
-            this.selectPouleDomain.Size = new System.Drawing.Size(137, 20);
+            this.selectPouleDomain.Size = new System.Drawing.Size(183, 26);
             this.selectPouleDomain.TabIndex = 16;
             this.selectPouleDomain.Text = "domainUpDown1";
             // 
@@ -108,135 +112,151 @@
             this.groupBox1.Controls.Add(this.matchLabel2);
             this.groupBox1.Controls.Add(this.selectedPoolLabel);
             this.groupBox1.Controls.Add(this.matchLabel1);
-            this.groupBox1.Location = new System.Drawing.Point(12, 64);
+            this.groupBox1.Location = new System.Drawing.Point(16, 89);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(243, 731);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.groupBox1.Size = new System.Drawing.Size(324, 1013);
             this.groupBox1.TabIndex = 15;
             this.groupBox1.TabStop = false;
             // 
             // matchLabel13
             // 
             this.matchLabel13.AutoSize = true;
-            this.matchLabel13.Location = new System.Drawing.Point(6, 606);
+            this.matchLabel13.Location = new System.Drawing.Point(8, 839);
+            this.matchLabel13.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.matchLabel13.Name = "matchLabel13";
-            this.matchLabel13.Size = new System.Drawing.Size(43, 13);
+            this.matchLabel13.Size = new System.Drawing.Size(53, 18);
             this.matchLabel13.TabIndex = 29;
             this.matchLabel13.Text = "Match1";
             // 
             // matchLabel14
             // 
             this.matchLabel14.AutoSize = true;
-            this.matchLabel14.Location = new System.Drawing.Point(6, 655);
+            this.matchLabel14.Location = new System.Drawing.Point(8, 907);
+            this.matchLabel14.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.matchLabel14.Name = "matchLabel14";
-            this.matchLabel14.Size = new System.Drawing.Size(43, 13);
+            this.matchLabel14.Size = new System.Drawing.Size(53, 18);
             this.matchLabel14.TabIndex = 28;
             this.matchLabel14.Text = "Match1";
             // 
             // matchLabel15
             // 
             this.matchLabel15.AutoSize = true;
-            this.matchLabel15.Location = new System.Drawing.Point(3, 702);
+            this.matchLabel15.Location = new System.Drawing.Point(4, 972);
+            this.matchLabel15.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.matchLabel15.Name = "matchLabel15";
-            this.matchLabel15.Size = new System.Drawing.Size(43, 13);
+            this.matchLabel15.Size = new System.Drawing.Size(53, 18);
             this.matchLabel15.TabIndex = 27;
             this.matchLabel15.Text = "Match1";
             // 
             // matchLabel10
             // 
             this.matchLabel10.AutoSize = true;
-            this.matchLabel10.Location = new System.Drawing.Point(6, 465);
+            this.matchLabel10.Location = new System.Drawing.Point(8, 643);
+            this.matchLabel10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.matchLabel10.Name = "matchLabel10";
-            this.matchLabel10.Size = new System.Drawing.Size(43, 13);
+            this.matchLabel10.Size = new System.Drawing.Size(53, 18);
             this.matchLabel10.TabIndex = 26;
             this.matchLabel10.Text = "Match1";
             // 
             // matchLabel11
             // 
             this.matchLabel11.AutoSize = true;
-            this.matchLabel11.Location = new System.Drawing.Point(6, 514);
+            this.matchLabel11.Location = new System.Drawing.Point(8, 711);
+            this.matchLabel11.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.matchLabel11.Name = "matchLabel11";
-            this.matchLabel11.Size = new System.Drawing.Size(43, 13);
+            this.matchLabel11.Size = new System.Drawing.Size(53, 18);
             this.matchLabel11.TabIndex = 25;
             this.matchLabel11.Text = "Match1";
             // 
             // matchLabel12
             // 
             this.matchLabel12.AutoSize = true;
-            this.matchLabel12.Location = new System.Drawing.Point(3, 561);
+            this.matchLabel12.Location = new System.Drawing.Point(4, 777);
+            this.matchLabel12.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.matchLabel12.Name = "matchLabel12";
-            this.matchLabel12.Size = new System.Drawing.Size(43, 13);
+            this.matchLabel12.Size = new System.Drawing.Size(53, 18);
             this.matchLabel12.TabIndex = 24;
             this.matchLabel12.Text = "Match1";
             // 
             // matchLabel9
             // 
             this.matchLabel9.AutoSize = true;
-            this.matchLabel9.Location = new System.Drawing.Point(6, 420);
+            this.matchLabel9.Location = new System.Drawing.Point(8, 582);
+            this.matchLabel9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.matchLabel9.Name = "matchLabel9";
-            this.matchLabel9.Size = new System.Drawing.Size(43, 13);
+            this.matchLabel9.Size = new System.Drawing.Size(53, 18);
             this.matchLabel9.TabIndex = 23;
             this.matchLabel9.Text = "Match1";
             // 
             // matchLabel8
             // 
             this.matchLabel8.AutoSize = true;
-            this.matchLabel8.Location = new System.Drawing.Point(6, 375);
+            this.matchLabel8.Location = new System.Drawing.Point(8, 519);
+            this.matchLabel8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.matchLabel8.Name = "matchLabel8";
-            this.matchLabel8.Size = new System.Drawing.Size(43, 13);
+            this.matchLabel8.Size = new System.Drawing.Size(53, 18);
             this.matchLabel8.TabIndex = 22;
             this.matchLabel8.Text = "Match1";
             // 
             // matchLabel7
             // 
             this.matchLabel7.AutoSize = true;
-            this.matchLabel7.Location = new System.Drawing.Point(3, 327);
+            this.matchLabel7.Location = new System.Drawing.Point(4, 453);
+            this.matchLabel7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.matchLabel7.Name = "matchLabel7";
-            this.matchLabel7.Size = new System.Drawing.Size(43, 13);
+            this.matchLabel7.Size = new System.Drawing.Size(53, 18);
             this.matchLabel7.TabIndex = 21;
             this.matchLabel7.Text = "Match1";
             // 
             // matchLabel4
             // 
             this.matchLabel4.AutoSize = true;
-            this.matchLabel4.Location = new System.Drawing.Point(6, 183);
+            this.matchLabel4.Location = new System.Drawing.Point(8, 253);
+            this.matchLabel4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.matchLabel4.Name = "matchLabel4";
-            this.matchLabel4.Size = new System.Drawing.Size(43, 13);
+            this.matchLabel4.Size = new System.Drawing.Size(53, 18);
             this.matchLabel4.TabIndex = 20;
             this.matchLabel4.Text = "Match1";
             // 
             // matchLabel5
             // 
             this.matchLabel5.AutoSize = true;
-            this.matchLabel5.Location = new System.Drawing.Point(6, 232);
+            this.matchLabel5.Location = new System.Drawing.Point(8, 321);
+            this.matchLabel5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.matchLabel5.Name = "matchLabel5";
-            this.matchLabel5.Size = new System.Drawing.Size(43, 13);
+            this.matchLabel5.Size = new System.Drawing.Size(53, 18);
             this.matchLabel5.TabIndex = 19;
             this.matchLabel5.Text = "Match1";
             // 
             // matchLabel6
             // 
             this.matchLabel6.AutoSize = true;
-            this.matchLabel6.Location = new System.Drawing.Point(3, 279);
+            this.matchLabel6.Location = new System.Drawing.Point(4, 387);
+            this.matchLabel6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.matchLabel6.Name = "matchLabel6";
-            this.matchLabel6.Size = new System.Drawing.Size(43, 13);
+            this.matchLabel6.Size = new System.Drawing.Size(53, 18);
             this.matchLabel6.TabIndex = 18;
             this.matchLabel6.Text = "Match1";
             // 
             // matchLabel3
             // 
             this.matchLabel3.AutoSize = true;
-            this.matchLabel3.Location = new System.Drawing.Point(6, 138);
+            this.matchLabel3.Location = new System.Drawing.Point(8, 191);
+            this.matchLabel3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.matchLabel3.Name = "matchLabel3";
-            this.matchLabel3.Size = new System.Drawing.Size(43, 13);
+            this.matchLabel3.Size = new System.Drawing.Size(53, 18);
             this.matchLabel3.TabIndex = 17;
             this.matchLabel3.Text = "Match1";
             // 
             // matchLabel2
             // 
             this.matchLabel2.AutoSize = true;
-            this.matchLabel2.Location = new System.Drawing.Point(6, 93);
+            this.matchLabel2.Location = new System.Drawing.Point(8, 129);
+            this.matchLabel2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.matchLabel2.Name = "matchLabel2";
-            this.matchLabel2.Size = new System.Drawing.Size(43, 13);
+            this.matchLabel2.Size = new System.Drawing.Size(53, 18);
             this.matchLabel2.TabIndex = 16;
             this.matchLabel2.Text = "Match1";
             // 
@@ -244,18 +264,20 @@
             // 
             this.selectedPoolLabel.AutoSize = true;
             this.selectedPoolLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.selectedPoolLabel.Location = new System.Drawing.Point(3, 16);
+            this.selectedPoolLabel.Location = new System.Drawing.Point(4, 23);
+            this.selectedPoolLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.selectedPoolLabel.Name = "selectedPoolLabel";
-            this.selectedPoolLabel.Size = new System.Drawing.Size(155, 16);
+            this.selectedPoolLabel.Size = new System.Drawing.Size(184, 20);
             this.selectedPoolLabel.TabIndex = 15;
             this.selectedPoolLabel.Text = "Geselecteerde Poule";
             // 
             // matchLabel1
             // 
             this.matchLabel1.AutoSize = true;
-            this.matchLabel1.Location = new System.Drawing.Point(3, 45);
+            this.matchLabel1.Location = new System.Drawing.Point(4, 63);
+            this.matchLabel1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.matchLabel1.Name = "matchLabel1";
-            this.matchLabel1.Size = new System.Drawing.Size(43, 13);
+            this.matchLabel1.Size = new System.Drawing.Size(53, 18);
             this.matchLabel1.TabIndex = 3;
             this.matchLabel1.Text = "Match1";
             // 
@@ -263,63 +285,70 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(8, 13);
+            this.label1.Location = new System.Drawing.Point(11, 18);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(86, 24);
+            this.label1.Size = new System.Drawing.Size(110, 29);
             this.label1.TabIndex = 14;
             this.label1.Text = "Gokkers";
             // 
             // betsOnAmount1
             // 
             this.betsOnAmount1.AutoSize = true;
-            this.betsOnAmount1.Location = new System.Drawing.Point(7, 45);
+            this.betsOnAmount1.Location = new System.Drawing.Point(9, 63);
+            this.betsOnAmount1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.betsOnAmount1.Name = "betsOnAmount1";
-            this.betsOnAmount1.Size = new System.Drawing.Size(35, 13);
+            this.betsOnAmount1.Size = new System.Drawing.Size(46, 18);
             this.betsOnAmount1.TabIndex = 0;
             this.betsOnAmount1.Text = "label2";
             // 
             // betsOnAmount2
             // 
             this.betsOnAmount2.AutoSize = true;
-            this.betsOnAmount2.Location = new System.Drawing.Point(6, 93);
+            this.betsOnAmount2.Location = new System.Drawing.Point(8, 129);
+            this.betsOnAmount2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.betsOnAmount2.Name = "betsOnAmount2";
-            this.betsOnAmount2.Size = new System.Drawing.Size(35, 13);
+            this.betsOnAmount2.Size = new System.Drawing.Size(46, 18);
             this.betsOnAmount2.TabIndex = 1;
             this.betsOnAmount2.Text = "label2";
             // 
             // betsOnAmount3
             // 
             this.betsOnAmount3.AutoSize = true;
-            this.betsOnAmount3.Location = new System.Drawing.Point(7, 138);
+            this.betsOnAmount3.Location = new System.Drawing.Point(9, 191);
+            this.betsOnAmount3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.betsOnAmount3.Name = "betsOnAmount3";
-            this.betsOnAmount3.Size = new System.Drawing.Size(35, 13);
+            this.betsOnAmount3.Size = new System.Drawing.Size(46, 18);
             this.betsOnAmount3.TabIndex = 2;
             this.betsOnAmount3.Text = "label2";
             // 
             // betsOnAmount4
             // 
             this.betsOnAmount4.AutoSize = true;
-            this.betsOnAmount4.Location = new System.Drawing.Point(7, 183);
+            this.betsOnAmount4.Location = new System.Drawing.Point(9, 253);
+            this.betsOnAmount4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.betsOnAmount4.Name = "betsOnAmount4";
-            this.betsOnAmount4.Size = new System.Drawing.Size(35, 13);
+            this.betsOnAmount4.Size = new System.Drawing.Size(46, 18);
             this.betsOnAmount4.TabIndex = 3;
             this.betsOnAmount4.Text = "label2";
             // 
             // betsOnAmount5
             // 
             this.betsOnAmount5.AutoSize = true;
-            this.betsOnAmount5.Location = new System.Drawing.Point(7, 232);
+            this.betsOnAmount5.Location = new System.Drawing.Point(9, 321);
+            this.betsOnAmount5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.betsOnAmount5.Name = "betsOnAmount5";
-            this.betsOnAmount5.Size = new System.Drawing.Size(35, 13);
+            this.betsOnAmount5.Size = new System.Drawing.Size(46, 18);
             this.betsOnAmount5.TabIndex = 4;
             this.betsOnAmount5.Text = "label2";
             // 
             // betsOnAmount6
             // 
             this.betsOnAmount6.AutoSize = true;
-            this.betsOnAmount6.Location = new System.Drawing.Point(7, 279);
+            this.betsOnAmount6.Location = new System.Drawing.Point(9, 387);
+            this.betsOnAmount6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.betsOnAmount6.Name = "betsOnAmount6";
-            this.betsOnAmount6.Size = new System.Drawing.Size(35, 13);
+            this.betsOnAmount6.Size = new System.Drawing.Size(46, 18);
             this.betsOnAmount6.TabIndex = 5;
             this.betsOnAmount6.Text = "label2";
             // 
@@ -327,9 +356,10 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold);
-            this.label2.Location = new System.Drawing.Point(7, 10);
+            this.label2.Location = new System.Drawing.Point(9, 13);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(108, 16);
+            this.label2.Size = new System.Drawing.Size(131, 20);
             this.label2.TabIndex = 6;
             this.label2.Text = "Gokken Status";
             // 
@@ -343,9 +373,11 @@
             this.groupBox2.Controls.Add(this.betsOnAmount3);
             this.groupBox2.Controls.Add(this.betsOnAmount2);
             this.groupBox2.Controls.Add(this.betsOnAmount1);
-            this.groupBox2.Location = new System.Drawing.Point(274, 64);
+            this.groupBox2.Location = new System.Drawing.Point(365, 89);
+            this.groupBox2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(203, 313);
+            this.groupBox2.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.groupBox2.Size = new System.Drawing.Size(271, 433);
             this.groupBox2.TabIndex = 18;
             this.groupBox2.TabStop = false;
             // 
@@ -353,17 +385,19 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 39.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(39, 122);
+            this.label4.Location = new System.Drawing.Point(52, 169);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(130, 61);
+            this.label4.Size = new System.Drawing.Size(163, 76);
             this.label4.TabIndex = 20;
             this.label4.Text = "WIP";
             // 
             // teamOverviewButton
             // 
-            this.teamOverviewButton.Location = new System.Drawing.Point(12, 40);
+            this.teamOverviewButton.Location = new System.Drawing.Point(16, 55);
+            this.teamOverviewButton.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.teamOverviewButton.Name = "teamOverviewButton";
-            this.teamOverviewButton.Size = new System.Drawing.Size(92, 23);
+            this.teamOverviewButton.Size = new System.Drawing.Size(123, 31);
             this.teamOverviewButton.TabIndex = 20;
             this.teamOverviewButton.Text = "Team Overview";
             this.teamOverviewButton.UseVisualStyleBackColor = true;
@@ -371,9 +405,11 @@
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(486, 800);
+            this.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.ClientSize = new System.Drawing.Size(689, 553);
             this.Controls.Add(this.teamOverviewButton);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.groupBox2);
@@ -381,6 +417,9 @@
             this.Controls.Add(this.selectPouleDomain);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.label1);
+            this.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
+            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
