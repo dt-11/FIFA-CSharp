@@ -35,10 +35,13 @@ namespace ProjectFifa
 
         private void overviewButton_Click(object sender, EventArgs e)
         {
-            overviewForm form2 = new overviewForm();
+            Teamoverview form2 = new Teamoverview();
             form2.ShowDialog();
         }
 
-        
+        private void exitToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
     }
 }

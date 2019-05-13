@@ -11,9 +11,9 @@ using Newtonsoft.Json;
 
 namespace ProjectFifa
 {
-    public partial class overviewForm : Form
+    public partial class Teamoverview : Form
     {
-        public overviewForm()
+        public Teamoverview()
         {
             InitializeComponent();
         }
@@ -40,5 +40,6 @@ namespace ProjectFifa
         {
             Close();
         }
+
     }
 }

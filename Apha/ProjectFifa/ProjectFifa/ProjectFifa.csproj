@@ -49,6 +49,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="bet.cs" />
     <Compile Include="betForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -61,11 +62,24 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="overviewForm.cs">
+    <Compile Include="Betoverview.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="overviewForm.Designer.cs">
-      <DependentUpon>overviewForm.cs</DependentUpon>
+    <Compile Include="Betoverview.Designer.cs">
+      <DependentUpon>Betoverview.cs</DependentUpon>
+    </Compile>
+    <Compile Include="gokker.cs" />
+    <Compile Include="gokkerAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="gokkerAdd.Designer.cs">
+      <DependentUpon>gokkerAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Teamoverview.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Teamoverview.Designer.cs">
+      <DependentUpon>Teamoverview.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -76,8 +90,14 @@
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="overviewForm.resx">
-      <DependentUpon>overviewForm.cs</DependentUpon>
+    <EmbeddedResource Include="Betoverview.resx">
+      <DependentUpon>Betoverview.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="gokkerAdd.resx">
+      <DependentUpon>gokkerAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Teamoverview.resx">
+      <DependentUpon>Teamoverview.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
