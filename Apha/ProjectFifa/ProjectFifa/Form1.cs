@@ -13,10 +13,12 @@ namespace ProjectFifa
 {
     public partial class Form1 : Form
     {
+        private bettorStorage storage;
         public Form1()
         {
             InitializeComponent();
-        }
+            this.storage = new bettorStorage();
+    }
         public void teams()
         {
             System.Net.WebClient downloader = new System.Net.WebClient();
@@ -39,9 +41,20 @@ namespace ProjectFifa
             form2.ShowDialog();
         }
 
-        private void exitToolStripMenuItem_Click(object sender, EventArgs e)
+        private void gokkerAanmakenToolStripMenuItem1_Click(object sender, EventArgs e)
         {
-            Close();
+            bettorAdd bettorAdd = new bettorAdd();
+            bettorAdd.ShowDialog();
+
+            if(bettorAdd.Result == null)
+            {
+                return;
+            }
+            this.storage.addBettor(bettorAdd.Result);
+
+            this.storage.save();
+
+            MessageBox.Show("Gokker Aangemaakt!.");
         }
     }
 }

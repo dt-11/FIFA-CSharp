@@ -29,6 +29,8 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.domainUpDown1 = new System.Windows.Forms.DomainUpDown();
+            this.label4 = new System.Windows.Forms.Label();
             this.betButton = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -38,14 +40,16 @@
             this.betScoreTextBox = new System.Windows.Forms.TextBox();
             this.betsOn = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.domainUpDown1 = new System.Windows.Forms.DomainUpDown();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.saveToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.loadToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.aanmakenToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.gokkerAanmakenToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.overviewToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.betOverviewToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.teamOverviewToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.aanmakenToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.gokkerAanmakenToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.weddenschapAanmakenToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.groupBox1.SuspendLayout();
             this.menuStrip1.SuspendLayout();
@@ -65,9 +69,26 @@
             this.groupBox1.Controls.Add(this.betsOn);
             this.groupBox1.Location = new System.Drawing.Point(12, 61);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(244, 212);
+            this.groupBox1.Size = new System.Drawing.Size(294, 212);
             this.groupBox1.TabIndex = 9;
             this.groupBox1.TabStop = false;
+            // 
+            // domainUpDown1
+            // 
+            this.domainUpDown1.Location = new System.Drawing.Point(70, 14);
+            this.domainUpDown1.Name = "domainUpDown1";
+            this.domainUpDown1.Size = new System.Drawing.Size(194, 20);
+            this.domainUpDown1.TabIndex = 11;
+            this.domainUpDown1.Text = "domainUpDown1";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(120, 154);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(45, 13);
+            this.label4.TabIndex = 10;
+            this.label4.Text = "Bijv: 4-1";
             // 
             // betButton
             // 
@@ -118,7 +139,7 @@
             // 
             this.teamBetDomain.Location = new System.Drawing.Point(52, 66);
             this.teamBetDomain.Name = "teamBetDomain";
-            this.teamBetDomain.Size = new System.Drawing.Size(162, 20);
+            this.teamBetDomain.Size = new System.Drawing.Size(212, 20);
             this.teamBetDomain.TabIndex = 4;
             this.teamBetDomain.Text = "domainUpDown1";
             // 
@@ -148,33 +169,17 @@
             this.label1.TabIndex = 8;
             this.label1.Text = "Gokken";
             // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(120, 154);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(45, 13);
-            this.label4.TabIndex = 10;
-            this.label4.Text = "Bijv: 4-1";
-            // 
-            // domainUpDown1
-            // 
-            this.domainUpDown1.Location = new System.Drawing.Point(70, 14);
-            this.domainUpDown1.Name = "domainUpDown1";
-            this.domainUpDown1.Size = new System.Drawing.Size(144, 20);
-            this.domainUpDown1.TabIndex = 11;
-            this.domainUpDown1.Text = "domainUpDown1";
-            // 
             // menuStrip1
             // 
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.fileToolStripMenuItem,
-            this.aanmakenToolStripMenuItem,
+            this.overviewToolStripMenuItem,
+            this.aanmakenToolStripMenuItem1,
             this.exitToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(265, 24);
-            this.menuStrip1.TabIndex = 24;
+            this.menuStrip1.Size = new System.Drawing.Size(318, 24);
+            this.menuStrip1.TabIndex = 29;
             this.menuStrip1.Text = "menuStrip1";
             // 
             // fileToolStripMenuItem
@@ -198,19 +203,47 @@
             this.loadToolStripMenuItem.Size = new System.Drawing.Size(100, 22);
             this.loadToolStripMenuItem.Text = "Load";
             // 
-            // aanmakenToolStripMenuItem
+            // overviewToolStripMenuItem
             // 
-            this.aanmakenToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.gokkerAanmakenToolStripMenuItem});
-            this.aanmakenToolStripMenuItem.Name = "aanmakenToolStripMenuItem";
-            this.aanmakenToolStripMenuItem.Size = new System.Drawing.Size(76, 20);
-            this.aanmakenToolStripMenuItem.Text = "Aanmaken";
+            this.overviewToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.betOverviewToolStripMenuItem,
+            this.teamOverviewToolStripMenuItem});
+            this.overviewToolStripMenuItem.Name = "overviewToolStripMenuItem";
+            this.overviewToolStripMenuItem.Size = new System.Drawing.Size(82, 20);
+            this.overviewToolStripMenuItem.Text = "Overzichten";
             // 
-            // gokkerAanmakenToolStripMenuItem
+            // betOverviewToolStripMenuItem
             // 
-            this.gokkerAanmakenToolStripMenuItem.Name = "gokkerAanmakenToolStripMenuItem";
-            this.gokkerAanmakenToolStripMenuItem.Size = new System.Drawing.Size(171, 22);
-            this.gokkerAanmakenToolStripMenuItem.Text = "Gokker Aanmaken";
+            this.betOverviewToolStripMenuItem.Name = "betOverviewToolStripMenuItem";
+            this.betOverviewToolStripMenuItem.Size = new System.Drawing.Size(156, 22);
+            this.betOverviewToolStripMenuItem.Text = "Gok Overzicht";
+            // 
+            // teamOverviewToolStripMenuItem
+            // 
+            this.teamOverviewToolStripMenuItem.Name = "teamOverviewToolStripMenuItem";
+            this.teamOverviewToolStripMenuItem.Size = new System.Drawing.Size(156, 22);
+            this.teamOverviewToolStripMenuItem.Text = "Team Overzicht";
+            // 
+            // aanmakenToolStripMenuItem1
+            // 
+            this.aanmakenToolStripMenuItem1.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.gokkerAanmakenToolStripMenuItem1,
+            this.weddenschapAanmakenToolStripMenuItem});
+            this.aanmakenToolStripMenuItem1.Name = "aanmakenToolStripMenuItem1";
+            this.aanmakenToolStripMenuItem1.Size = new System.Drawing.Size(76, 20);
+            this.aanmakenToolStripMenuItem1.Text = "Aanmaken";
+            // 
+            // gokkerAanmakenToolStripMenuItem1
+            // 
+            this.gokkerAanmakenToolStripMenuItem1.Name = "gokkerAanmakenToolStripMenuItem1";
+            this.gokkerAanmakenToolStripMenuItem1.Size = new System.Drawing.Size(209, 22);
+            this.gokkerAanmakenToolStripMenuItem1.Text = "Gokker Aanmaken";
+            // 
+            // weddenschapAanmakenToolStripMenuItem
+            // 
+            this.weddenschapAanmakenToolStripMenuItem.Name = "weddenschapAanmakenToolStripMenuItem";
+            this.weddenschapAanmakenToolStripMenuItem.Size = new System.Drawing.Size(209, 22);
+            this.weddenschapAanmakenToolStripMenuItem.Text = "Weddenschap Aanmaken";
             // 
             // exitToolStripMenuItem
             // 
@@ -222,7 +255,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(265, 284);
+            this.ClientSize = new System.Drawing.Size(318, 284);
             this.Controls.Add(this.menuStrip1);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.label1);
@@ -255,8 +288,12 @@
         private System.Windows.Forms.ToolStripMenuItem fileToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem saveToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem loadToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem aanmakenToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem gokkerAanmakenToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem overviewToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem betOverviewToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem teamOverviewToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem aanmakenToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem gokkerAanmakenToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem weddenschapAanmakenToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem exitToolStripMenuItem;
     }
 }

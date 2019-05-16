@@ -51,14 +51,16 @@
             this.matchLabel11 = new System.Windows.Forms.Label();
             this.matchLabel12 = new System.Windows.Forms.Label();
             this.matchLabel9 = new System.Windows.Forms.Label();
-            this.teamOverviewButton = new System.Windows.Forms.Button();
-            this.formToBetOverview = new System.Windows.Forms.Button();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.aanmakenToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.gokkerAanmakenToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.saveToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.loadToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.overviewToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.betOverviewToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.teamOverviewToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.aanmakenToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.gokkerAanmakenToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.weddenschapAanmakenToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -313,37 +315,17 @@
             this.matchLabel9.TabIndex = 30;
             this.matchLabel9.Text = "Match1";
             // 
-            // teamOverviewButton
-            // 
-            this.teamOverviewButton.BackColor = System.Drawing.Color.White;
-            this.teamOverviewButton.Location = new System.Drawing.Point(7, 59);
-            this.teamOverviewButton.Name = "teamOverviewButton";
-            this.teamOverviewButton.Size = new System.Drawing.Size(92, 23);
-            this.teamOverviewButton.TabIndex = 20;
-            this.teamOverviewButton.Text = "Team Overzicht";
-            this.teamOverviewButton.UseVisualStyleBackColor = false;
-            this.teamOverviewButton.Click += new System.EventHandler(this.overviewButton_Click);
-            // 
-            // formToBetOverview
-            // 
-            this.formToBetOverview.BackColor = System.Drawing.Color.White;
-            this.formToBetOverview.Location = new System.Drawing.Point(105, 59);
-            this.formToBetOverview.Name = "formToBetOverview";
-            this.formToBetOverview.Size = new System.Drawing.Size(85, 23);
-            this.formToBetOverview.TabIndex = 21;
-            this.formToBetOverview.Text = "Gok Overzicht";
-            this.formToBetOverview.UseVisualStyleBackColor = false;
-            // 
             // menuStrip1
             // 
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.fileToolStripMenuItem,
-            this.aanmakenToolStripMenuItem,
+            this.overviewToolStripMenuItem,
+            this.aanmakenToolStripMenuItem1,
             this.exitToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(522, 24);
-            this.menuStrip1.TabIndex = 23;
+            this.menuStrip1.TabIndex = 28;
             this.menuStrip1.Text = "menuStrip1";
             // 
             // fileToolStripMenuItem
@@ -355,38 +337,66 @@
             this.fileToolStripMenuItem.Size = new System.Drawing.Size(37, 20);
             this.fileToolStripMenuItem.Text = "File";
             // 
-            // aanmakenToolStripMenuItem
-            // 
-            this.aanmakenToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.gokkerAanmakenToolStripMenuItem});
-            this.aanmakenToolStripMenuItem.Name = "aanmakenToolStripMenuItem";
-            this.aanmakenToolStripMenuItem.Size = new System.Drawing.Size(76, 20);
-            this.aanmakenToolStripMenuItem.Text = "Aanmaken";
-            // 
-            // gokkerAanmakenToolStripMenuItem
-            // 
-            this.gokkerAanmakenToolStripMenuItem.Name = "gokkerAanmakenToolStripMenuItem";
-            this.gokkerAanmakenToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.gokkerAanmakenToolStripMenuItem.Text = "Gokker Aanmaken";
-            // 
             // saveToolStripMenuItem
             // 
             this.saveToolStripMenuItem.Name = "saveToolStripMenuItem";
-            this.saveToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.saveToolStripMenuItem.Size = new System.Drawing.Size(100, 22);
             this.saveToolStripMenuItem.Text = "Save";
             // 
             // loadToolStripMenuItem
             // 
             this.loadToolStripMenuItem.Name = "loadToolStripMenuItem";
-            this.loadToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.loadToolStripMenuItem.Size = new System.Drawing.Size(100, 22);
             this.loadToolStripMenuItem.Text = "Load";
+            // 
+            // overviewToolStripMenuItem
+            // 
+            this.overviewToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.betOverviewToolStripMenuItem,
+            this.teamOverviewToolStripMenuItem});
+            this.overviewToolStripMenuItem.Name = "overviewToolStripMenuItem";
+            this.overviewToolStripMenuItem.Size = new System.Drawing.Size(82, 20);
+            this.overviewToolStripMenuItem.Text = "Overzichten";
+            // 
+            // betOverviewToolStripMenuItem
+            // 
+            this.betOverviewToolStripMenuItem.Name = "betOverviewToolStripMenuItem";
+            this.betOverviewToolStripMenuItem.Size = new System.Drawing.Size(156, 22);
+            this.betOverviewToolStripMenuItem.Text = "Gok Overzicht";
+            // 
+            // teamOverviewToolStripMenuItem
+            // 
+            this.teamOverviewToolStripMenuItem.Name = "teamOverviewToolStripMenuItem";
+            this.teamOverviewToolStripMenuItem.Size = new System.Drawing.Size(156, 22);
+            this.teamOverviewToolStripMenuItem.Text = "Team Overzicht";
+            // 
+            // aanmakenToolStripMenuItem1
+            // 
+            this.aanmakenToolStripMenuItem1.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.gokkerAanmakenToolStripMenuItem1,
+            this.weddenschapAanmakenToolStripMenuItem});
+            this.aanmakenToolStripMenuItem1.Name = "aanmakenToolStripMenuItem1";
+            this.aanmakenToolStripMenuItem1.Size = new System.Drawing.Size(76, 20);
+            this.aanmakenToolStripMenuItem1.Text = "Aanmaken";
+            // 
+            // gokkerAanmakenToolStripMenuItem1
+            // 
+            this.gokkerAanmakenToolStripMenuItem1.Name = "gokkerAanmakenToolStripMenuItem1";
+            this.gokkerAanmakenToolStripMenuItem1.Size = new System.Drawing.Size(209, 22);
+            this.gokkerAanmakenToolStripMenuItem1.Text = "Gokker Aanmaken";
+            this.gokkerAanmakenToolStripMenuItem1.Click += new System.EventHandler(this.gokkerAanmakenToolStripMenuItem1_Click);
+            // 
+            // weddenschapAanmakenToolStripMenuItem
+            // 
+            this.weddenschapAanmakenToolStripMenuItem.Name = "weddenschapAanmakenToolStripMenuItem";
+            this.weddenschapAanmakenToolStripMenuItem.Size = new System.Drawing.Size(209, 22);
+            this.weddenschapAanmakenToolStripMenuItem.Text = "Weddenschap Aanmaken";
             // 
             // exitToolStripMenuItem
             // 
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
             this.exitToolStripMenuItem.Size = new System.Drawing.Size(37, 20);
             this.exitToolStripMenuItem.Text = "Exit";
-            this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
             // 
             // Form1
             // 
@@ -394,17 +404,14 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(522, 484);
-            this.Controls.Add(this.formToBetOverview);
-            this.Controls.Add(this.teamOverviewButton);
+            this.Controls.Add(this.menuStrip1);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.poolButton);
             this.Controls.Add(this.selectPouleDomain);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.menuStrip1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.MainMenuStrip = this.menuStrip1;
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
@@ -437,7 +444,6 @@
         private System.Windows.Forms.Label matchLabel7;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.Button teamOverviewButton;
         private System.Windows.Forms.Label matchLabel13;
         private System.Windows.Forms.Label matchLabel14;
         private System.Windows.Forms.Label matchLabel15;
@@ -445,13 +451,16 @@
         private System.Windows.Forms.Label matchLabel11;
         private System.Windows.Forms.Label matchLabel12;
         private System.Windows.Forms.Label matchLabel9;
-        private System.Windows.Forms.Button formToBetOverview;
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem fileToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem aanmakenToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem gokkerAanmakenToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem saveToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem loadToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem overviewToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem betOverviewToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem teamOverviewToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem aanmakenToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem gokkerAanmakenToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem weddenschapAanmakenToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem exitToolStripMenuItem;
     }
 }

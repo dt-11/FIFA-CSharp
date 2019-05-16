@@ -6,13 +6,15 @@ using System.Threading.Tasks;
 
 namespace ProjectFifa
 {
-    public class gokker
+    public class bettor
     {
         public string name { get; set; }
 
-        public int balance { get; set; }
+        public string balance { get; set; }
 
-        public bet mybets { get; set; }
+        //public bet mybets { get; set; }
+
+
 
     }
 }

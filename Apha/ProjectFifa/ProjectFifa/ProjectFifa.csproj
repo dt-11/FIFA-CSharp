@@ -68,13 +68,14 @@
     <Compile Include="Betoverview.Designer.cs">
       <DependentUpon>Betoverview.cs</DependentUpon>
     </Compile>
-    <Compile Include="gokker.cs" />
-    <Compile Include="gokkerAdd.cs">
+    <Compile Include="bettor.cs" />
+    <Compile Include="bettorAdd.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="gokkerAdd.Designer.cs">
-      <DependentUpon>gokkerAdd.cs</DependentUpon>
+    <Compile Include="bettorAdd.Designer.cs">
+      <DependentUpon>bettorAdd.cs</DependentUpon>
     </Compile>
+    <Compile Include="bettorStorage.cs" />
     <Compile Include="Teamoverview.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -93,8 +94,8 @@
     <EmbeddedResource Include="Betoverview.resx">
       <DependentUpon>Betoverview.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="gokkerAdd.resx">
-      <DependentUpon>gokkerAdd.cs</DependentUpon>
+    <EmbeddedResource Include="bettorAdd.resx">
+      <DependentUpon>bettorAdd.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Teamoverview.resx">
       <DependentUpon>Teamoverview.cs</DependentUpon>

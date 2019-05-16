@@ -10,8 +10,7 @@ namespace ProjectFifa
     {
         public string WinningTeam { get; set; }
         public string EndScore { get; set; }
-        public gokker bettor { get; set; }
+        public bettor bettor { get; set; }
         public int pool { get; set; }
-
     }
 }
