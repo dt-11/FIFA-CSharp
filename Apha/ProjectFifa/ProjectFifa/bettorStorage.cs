@@ -12,10 +12,10 @@ namespace ProjectFifa
         public const string LOCATION = "./gokkers/";
         public List<bettor> bettors { get; set; }
 
-        /*public betStorage()
+        public bettorStorage()
         {
-            this.bets = this.Load();
-        }*/
+            this.bettors = this.Load();
+        }
         public void save()
         {
             if (!Directory.Exists(LOCATION))

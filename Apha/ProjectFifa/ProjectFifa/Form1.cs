@@ -14,6 +14,7 @@ namespace ProjectFifa
     public partial class Form1 : Form
     {
         private bettorStorage storage;
+        match match1;
         public Form1()
         {
             InitializeComponent();
@@ -24,7 +25,7 @@ namespace ProjectFifa
             System.Net.WebClient downloader = new System.Net.WebClient();
             string teamjson;
 
-            teamjson = downloader.DownloadString("http://localhost/fifa/API.php");
+            teamjson = downloader.DownloadString("http://localhost/fifa/API.php?key=frikandelebakker");
 
             team[] team = JsonConvert.DeserializeObject<team[]>(teamjson);
 
@@ -33,6 +34,7 @@ namespace ProjectFifa
         private void Form1_Load(object sender, EventArgs e)
         {
             teams();
+            matchs();
         }
 
         private void overviewButton_Click(object sender, EventArgs e)
@@ -55,6 +57,15 @@ namespace ProjectFifa
             this.storage.save();
 
             MessageBox.Show("Gokker Aangemaakt!.");
+        }
+        public void matchs()
+        {
+            match1 = new match();
+            match1.teamAId = "fcmalle";
+            match1.teamBId = "fcGekkie";
+            match1.myLabel = matchLabel1;
+            match1.myLabel.Text = match1.updatelabel();
+
         }
     }
 }
