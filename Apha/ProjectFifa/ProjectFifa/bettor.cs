@@ -10,10 +10,9 @@ namespace ProjectFifa
     {
         public string name { get; set; }
 
-        public string balance { get; set; }
+        public int balance { get; set; }
 
-        //public bet mybets { get; set; }
-
+        public bet[] mybets { get; set; }
 
 
     }

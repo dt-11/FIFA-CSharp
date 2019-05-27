@@ -8,19 +8,17 @@ using System.Windows.Forms;
 
 namespace ProjectFifa
 {
-    class match
+    public class match
     {
         public int matchId { get; set; }
-        public string teamAId { get; set; }
-        public string teamBId { get; set; }
-        public int matchScore { get; set; }
-        public int matchPool { get; set; }
-        public Label myLabel { get; set; }
 
-        public string updatelabel()
-        {
-            return this.teamAId + "  -  " + this.teamBId;
-        }
+        public int matchPool { get; set; }
+
+        public int teamCreated { get; set; }
+
+        public string teamA { get; set; }
+
+        public string teamB { get; set; }
+
     }
-   
 }

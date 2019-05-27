@@ -26,7 +26,7 @@ namespace ProjectFifa
             System.Net.WebClient downloader = new System.Net.WebClient();
             string teamjson;
 
-            teamjson = downloader.DownloadString("http://localhost/fifa/API.php?key=hardcoded");
+            teamjson = downloader.DownloadString("http://localhost/fifa/teamAPI.php?key=frikandelebakker");
 
             team[] team = JsonConvert.DeserializeObject<team[]>(teamjson);
 

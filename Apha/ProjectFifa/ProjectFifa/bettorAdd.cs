@@ -30,16 +30,11 @@ namespace ProjectFifa
             {
                 bettor newbettor = new bettor();
                 newbettor.name = gokkerNameTextBox.Text;
-                newbettor.balance = "100";
+                newbettor.balance = 100;
 
                 this.Result = newbettor;
                 this.Close();
             }
-            
-        }
-
-        private void saveToolStripMenuItem_Click(object sender, EventArgs e)
-        {
             
         }
     }

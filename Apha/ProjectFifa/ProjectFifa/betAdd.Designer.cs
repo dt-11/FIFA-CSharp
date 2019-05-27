@@ -29,119 +29,111 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.domainUpDown1 = new System.Windows.Forms.DomainUpDown();
+            this.bettorComboBox = new System.Windows.Forms.ComboBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.betButton = new System.Windows.Forms.Button();
+            this.teamComboBox = new System.Windows.Forms.ComboBox();
+            this.matchComboBox = new System.Windows.Forms.ComboBox();
             this.label3 = new System.Windows.Forms.Label();
+            this.inzetNumbericUpDown = new System.Windows.Forms.NumericUpDown();
+            this.betButton = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
-            this.betScoreAmount = new System.Windows.Forms.Label();
-            this.teamBetLabel = new System.Windows.Forms.Label();
-            this.teamBetDomain = new System.Windows.Forms.DomainUpDown();
-            this.betScoreTextBox = new System.Windows.Forms.TextBox();
             this.betsOn = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.inzetNumbericUpDown)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.domainUpDown1);
+            this.groupBox1.Controls.Add(this.bettorComboBox);
             this.groupBox1.Controls.Add(this.label4);
-            this.groupBox1.Controls.Add(this.betButton);
+            this.groupBox1.Controls.Add(this.teamComboBox);
+            this.groupBox1.Controls.Add(this.matchComboBox);
             this.groupBox1.Controls.Add(this.label3);
+            this.groupBox1.Controls.Add(this.inzetNumbericUpDown);
+            this.groupBox1.Controls.Add(this.betButton);
             this.groupBox1.Controls.Add(this.label2);
-            this.groupBox1.Controls.Add(this.betScoreAmount);
-            this.groupBox1.Controls.Add(this.teamBetLabel);
-            this.groupBox1.Controls.Add(this.teamBetDomain);
-            this.groupBox1.Controls.Add(this.betScoreTextBox);
             this.groupBox1.Controls.Add(this.betsOn);
-            this.groupBox1.Location = new System.Drawing.Point(12, 36);
+            this.groupBox1.Location = new System.Drawing.Point(16, 36);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(294, 212);
+            this.groupBox1.Size = new System.Drawing.Size(294, 199);
             this.groupBox1.TabIndex = 9;
             this.groupBox1.TabStop = false;
             // 
-            // domainUpDown1
+            // bettorComboBox
             // 
-            this.domainUpDown1.Location = new System.Drawing.Point(70, 14);
-            this.domainUpDown1.Name = "domainUpDown1";
-            this.domainUpDown1.Size = new System.Drawing.Size(194, 20);
-            this.domainUpDown1.TabIndex = 11;
-            this.domainUpDown1.Text = "domainUpDown1";
+            this.bettorComboBox.FormattingEnabled = true;
+            this.bettorComboBox.Location = new System.Drawing.Point(73, 19);
+            this.bettorComboBox.Name = "bettorComboBox";
+            this.bettorComboBox.Size = new System.Drawing.Size(203, 21);
+            this.bettorComboBox.TabIndex = 11;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(120, 154);
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(10, 21);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(45, 13);
+            this.label4.Size = new System.Drawing.Size(55, 16);
             this.label4.TabIndex = 10;
-            this.label4.Text = "Bijv: 4-1";
+            this.label4.Text = "Gokker:";
+            // 
+            // teamComboBox
+            // 
+            this.teamComboBox.FormattingEnabled = true;
+            this.teamComboBox.Location = new System.Drawing.Point(99, 77);
+            this.teamComboBox.Name = "teamComboBox";
+            this.teamComboBox.Size = new System.Drawing.Size(180, 21);
+            this.teamComboBox.TabIndex = 15;
+            // 
+            // matchComboBox
+            // 
+            this.matchComboBox.FormattingEnabled = true;
+            this.matchComboBox.Location = new System.Drawing.Point(73, 50);
+            this.matchComboBox.Name = "matchComboBox";
+            this.matchComboBox.Size = new System.Drawing.Size(206, 21);
+            this.matchComboBox.TabIndex = 14;
+            this.matchComboBox.SelectedIndexChanged += new System.EventHandler(this.matchComboBox_SelectedIndexChanged);
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(10, 110);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(143, 13);
+            this.label3.TabIndex = 13;
+            this.label3.Text = "Hoeveel geld wilt u inzetten?";
+            // 
+            // inzetNumbericUpDown
+            // 
+            this.inzetNumbericUpDown.Location = new System.Drawing.Point(12, 135);
+            this.inzetNumbericUpDown.Name = "inzetNumbericUpDown";
+            this.inzetNumbericUpDown.Size = new System.Drawing.Size(89, 20);
+            this.inzetNumbericUpDown.TabIndex = 12;
             // 
             // betButton
             // 
-            this.betButton.Location = new System.Drawing.Point(7, 178);
+            this.betButton.Location = new System.Drawing.Point(6, 161);
             this.betButton.Name = "betButton";
             this.betButton.Size = new System.Drawing.Size(75, 23);
             this.betButton.TabIndex = 9;
             this.betButton.Text = "Enter";
             this.betButton.UseVisualStyleBackColor = true;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(6, 106);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(193, 13);
-            this.label3.TabIndex = 8;
-            this.label3.Text = "Wat is de eindscoren van de wedstrijd?";
+            this.betButton.Click += new System.EventHandler(this.betButton_Click);
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(7, 50);
+            this.label2.Location = new System.Drawing.Point(10, 80);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(83, 13);
             this.label2.TabIndex = 7;
             this.label2.Text = "Gok wie er wint.";
             // 
-            // betScoreAmount
-            // 
-            this.betScoreAmount.AutoSize = true;
-            this.betScoreAmount.Location = new System.Drawing.Point(7, 134);
-            this.betScoreAmount.Name = "betScoreAmount";
-            this.betScoreAmount.Size = new System.Drawing.Size(85, 13);
-            this.betScoreAmount.TabIndex = 6;
-            this.betScoreAmount.Text = "Gok eindscoren:";
-            // 
-            // teamBetLabel
-            // 
-            this.teamBetLabel.AutoSize = true;
-            this.teamBetLabel.Location = new System.Drawing.Point(8, 68);
-            this.teamBetLabel.Name = "teamBetLabel";
-            this.teamBetLabel.Size = new System.Drawing.Size(37, 13);
-            this.teamBetLabel.TabIndex = 5;
-            this.teamBetLabel.Text = "Team:";
-            // 
-            // teamBetDomain
-            // 
-            this.teamBetDomain.Location = new System.Drawing.Point(52, 66);
-            this.teamBetDomain.Name = "teamBetDomain";
-            this.teamBetDomain.Size = new System.Drawing.Size(212, 20);
-            this.teamBetDomain.TabIndex = 4;
-            this.teamBetDomain.Text = "domainUpDown1";
-            // 
-            // betScoreTextBox
-            // 
-            this.betScoreTextBox.Location = new System.Drawing.Point(99, 131);
-            this.betScoreTextBox.Name = "betScoreTextBox";
-            this.betScoreTextBox.Size = new System.Drawing.Size(100, 20);
-            this.betScoreTextBox.TabIndex = 3;
-            // 
             // betsOn
             // 
             this.betsOn.AutoSize = true;
-            this.betsOn.Location = new System.Drawing.Point(7, 16);
+            this.betsOn.Location = new System.Drawing.Point(10, 50);
             this.betsOn.Name = "betsOn";
             this.betsOn.Size = new System.Drawing.Size(57, 13);
             this.betsOn.TabIndex = 1;
@@ -161,13 +153,14 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(318, 258);
+            this.ClientSize = new System.Drawing.Size(322, 246);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.label1);
             this.Name = "betForm";
             this.Text = "betForm";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.inzetNumbericUpDown)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -177,15 +170,14 @@
 
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Button betButton;
-        private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label betScoreAmount;
-        private System.Windows.Forms.Label teamBetLabel;
-        private System.Windows.Forms.DomainUpDown teamBetDomain;
-        private System.Windows.Forms.TextBox betScoreTextBox;
         private System.Windows.Forms.Label betsOn;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.NumericUpDown inzetNumbericUpDown;
+        private System.Windows.Forms.ComboBox matchComboBox;
+        private System.Windows.Forms.ComboBox teamComboBox;
+        private System.Windows.Forms.ComboBox bettorComboBox;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.DomainUpDown domainUpDown1;
     }
 }

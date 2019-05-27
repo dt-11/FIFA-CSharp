@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace ProjectFifa
 {
-    class bettorStorage
+    public class bettorStorage
     {
         public const string LOCATION = "./gokkers/";
         public List<bettor> bettors { get; set; }
@@ -35,7 +35,7 @@ namespace ProjectFifa
 
                 fileContent += "\n" + bettorsave.balance;
 
-                //fileContent += "\n" + bettorsave.mybets;
+                fileContent += "\n" + bettorsave.mybets;
 
                 string safeTitle = RemoveInvalidFileNameChars(bettorsave.name);
 
@@ -62,7 +62,7 @@ namespace ProjectFifa
 
                 loadedBettor.name = contentLines[0];
 
-                loadedBettor.balance = contentLines[1];
+                loadedBettor.balance = Convert.ToInt32(contentLines[1]);
 
                 result.Add(loadedBettor);
             }
