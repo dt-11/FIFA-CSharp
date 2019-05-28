@@ -14,6 +14,11 @@ namespace ProjectFifa
 
         public bet[] mybets { get; set; }
 
+        public override string ToString()
+        {
+            return name;
+        }
 
+        
     }
 }

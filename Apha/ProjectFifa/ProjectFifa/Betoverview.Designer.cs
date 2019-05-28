@@ -96,6 +96,7 @@
             this.betOverviewToFormButton.TabIndex = 26;
             this.betOverviewToFormButton.Text = "Back";
             this.betOverviewToFormButton.UseVisualStyleBackColor = true;
+            this.betOverviewToFormButton.Click += new System.EventHandler(this.betOverviewToFormButton_Click);
             // 
             // Betoverview
             // 

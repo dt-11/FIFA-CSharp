@@ -9,9 +9,8 @@ namespace ProjectFifa
     public class bet
     {
         public string betMatch { get; set; }
-        public string winningteam { get; set; }
+        public string Winningteam { get; set; }
         public int betAmount { get; set; }
         public bettor bettor { get; set; }
-        
     }
 }

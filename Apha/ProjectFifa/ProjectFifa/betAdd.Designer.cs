@@ -32,23 +32,27 @@
             this.bettorComboBox = new System.Windows.Forms.ComboBox();
             this.label4 = new System.Windows.Forms.Label();
             this.teamComboBox = new System.Windows.Forms.ComboBox();
-            this.matchComboBox = new System.Windows.Forms.ComboBox();
             this.label3 = new System.Windows.Forms.Label();
             this.inzetNumbericUpDown = new System.Windows.Forms.NumericUpDown();
             this.betButton = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.betsOn = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.matchComboBox = new System.Windows.Forms.ComboBox();
+            this.betterBalLabel = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.inzetNumbericUpDown)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.label6);
+            this.groupBox1.Controls.Add(this.betterBalLabel);
+            this.groupBox1.Controls.Add(this.matchComboBox);
             this.groupBox1.Controls.Add(this.bettorComboBox);
             this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Controls.Add(this.teamComboBox);
-            this.groupBox1.Controls.Add(this.matchComboBox);
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.inzetNumbericUpDown);
             this.groupBox1.Controls.Add(this.betButton);
@@ -56,7 +60,7 @@
             this.groupBox1.Controls.Add(this.betsOn);
             this.groupBox1.Location = new System.Drawing.Point(16, 36);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(294, 199);
+            this.groupBox1.Size = new System.Drawing.Size(294, 205);
             this.groupBox1.TabIndex = 9;
             this.groupBox1.TabStop = false;
             // 
@@ -67,6 +71,7 @@
             this.bettorComboBox.Name = "bettorComboBox";
             this.bettorComboBox.Size = new System.Drawing.Size(203, 21);
             this.bettorComboBox.TabIndex = 11;
+            this.bettorComboBox.SelectedIndexChanged += new System.EventHandler(this.bettorComboBox_SelectedIndexChanged);
             // 
             // label4
             // 
@@ -81,24 +86,15 @@
             // teamComboBox
             // 
             this.teamComboBox.FormattingEnabled = true;
-            this.teamComboBox.Location = new System.Drawing.Point(99, 77);
+            this.teamComboBox.Location = new System.Drawing.Point(96, 77);
             this.teamComboBox.Name = "teamComboBox";
             this.teamComboBox.Size = new System.Drawing.Size(180, 21);
             this.teamComboBox.TabIndex = 15;
             // 
-            // matchComboBox
-            // 
-            this.matchComboBox.FormattingEnabled = true;
-            this.matchComboBox.Location = new System.Drawing.Point(73, 50);
-            this.matchComboBox.Name = "matchComboBox";
-            this.matchComboBox.Size = new System.Drawing.Size(206, 21);
-            this.matchComboBox.TabIndex = 14;
-            this.matchComboBox.SelectedIndexChanged += new System.EventHandler(this.matchComboBox_SelectedIndexChanged);
-            // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(10, 110);
+            this.label3.Location = new System.Drawing.Point(3, 111);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(143, 13);
             this.label3.TabIndex = 13;
@@ -106,14 +102,14 @@
             // 
             // inzetNumbericUpDown
             // 
-            this.inzetNumbericUpDown.Location = new System.Drawing.Point(12, 135);
+            this.inzetNumbericUpDown.Location = new System.Drawing.Point(6, 136);
             this.inzetNumbericUpDown.Name = "inzetNumbericUpDown";
             this.inzetNumbericUpDown.Size = new System.Drawing.Size(89, 20);
             this.inzetNumbericUpDown.TabIndex = 12;
             // 
             // betButton
             // 
-            this.betButton.Location = new System.Drawing.Point(6, 161);
+            this.betButton.Location = new System.Drawing.Point(6, 162);
             this.betButton.Name = "betButton";
             this.betButton.Size = new System.Drawing.Size(75, 23);
             this.betButton.TabIndex = 9;
@@ -124,7 +120,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(10, 80);
+            this.label2.Location = new System.Drawing.Point(7, 80);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(83, 13);
             this.label2.TabIndex = 7;
@@ -149,11 +145,39 @@
             this.label1.TabIndex = 8;
             this.label1.Text = "Gokken";
             // 
+            // matchComboBox
+            // 
+            this.matchComboBox.FormattingEnabled = true;
+            this.matchComboBox.Location = new System.Drawing.Point(73, 50);
+            this.matchComboBox.Name = "matchComboBox";
+            this.matchComboBox.Size = new System.Drawing.Size(203, 21);
+            this.matchComboBox.TabIndex = 16;
+            this.matchComboBox.SelectedIndexChanged += new System.EventHandler(this.matchComboBox_SelectedIndexChanged);
+            // 
+            // betterBalLabel
+            // 
+            this.betterBalLabel.AutoSize = true;
+            this.betterBalLabel.Location = new System.Drawing.Point(201, 162);
+            this.betterBalLabel.Name = "betterBalLabel";
+            this.betterBalLabel.Size = new System.Drawing.Size(10, 13);
+            this.betterBalLabel.TabIndex = 17;
+            this.betterBalLabel.Text = "-";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
+            this.label6.Location = new System.Drawing.Point(195, 139);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(85, 17);
+            this.label6.TabIndex = 18;
+            this.label6.Text = "My Balance:";
+            // 
             // betForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(322, 246);
+            this.ClientSize = new System.Drawing.Size(322, 251);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.label1);
             this.Name = "betForm";
@@ -175,9 +199,11 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.NumericUpDown inzetNumbericUpDown;
-        private System.Windows.Forms.ComboBox matchComboBox;
         private System.Windows.Forms.ComboBox teamComboBox;
         private System.Windows.Forms.ComboBox bettorComboBox;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.ComboBox matchComboBox;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label betterBalLabel;
     }
 }

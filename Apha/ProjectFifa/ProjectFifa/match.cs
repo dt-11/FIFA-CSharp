@@ -20,5 +20,9 @@ namespace ProjectFifa
 
         public string teamB { get; set; }
 
+        public override string ToString()
+        {
+            return teamA + " - " + teamB;
+        }
     }
 }

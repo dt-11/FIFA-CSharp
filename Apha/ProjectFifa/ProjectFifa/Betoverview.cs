@@ -17,5 +17,13 @@ namespace ProjectFifa
             InitializeComponent();
         }
 
+        private void betOverviewToFormButton_Click(object sender, EventArgs e)
+        {
+
+        }
+        public void betoverview()
+        {
+
+        }
     }
 }

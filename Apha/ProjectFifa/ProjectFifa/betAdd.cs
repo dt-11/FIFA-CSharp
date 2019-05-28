@@ -18,21 +18,17 @@ namespace ProjectFifa
         public betForm()
         {
             InitializeComponent();
-            inputs();
             this.storage = new bettorStorage();
+            inputs();
         }
-
-        private void matchComboBox_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            match selectedmatch = (match)matchComboBox.SelectedItem;
-            teamComboBox.Items.Clear();
-            teamComboBox.Items.Add(selectedmatch.teamA);
-            teamComboBox.Items.Add(selectedmatch.teamB);
-        }
-
         private void betButton_Click(object sender, EventArgs e)
         {
-            if (matchComboBox.Text == "")
+            int bettorBalance = Convert.ToInt32(betterBalLabel.Text);
+            if (bettorComboBox.SelectedItem == null)
+            {
+                MessageBox.Show("Selecteer een gokker.");
+            }
+            else if (matchComboBox.Text == "")
             {
                 MessageBox.Show("Selecteer een Match.");
             }
@@ -44,11 +40,15 @@ namespace ProjectFifa
             {
                 MessageBox.Show("Zet een hoeveelheid in.");
             }
+            else if (bettorBalance < 1)
+            {
+                MessageBox.Show("U heeft niet genoeg geld.");
+            }
             else
             {
                 bet newbet = new bet();
                 newbet.betMatch = matchComboBox.Text;
-                newbet.winningteam = teamComboBox.Text;
+                newbet.winningTeam = teamComboBox.Text;
                 newbet.betAmount = Convert.ToInt32(inzetNumbericUpDown.Value);
                 newbet.bettor = (bettor)bettorComboBox.SelectedItem;
                 MessageBox.Show("Weddenschap aangemaakt.");
@@ -68,21 +68,33 @@ namespace ProjectFifa
 
             for (int i = 0; i < matchs.Length; i++)
             {
-                matchComboBox.Items.Add(matchs[i].teamA + " - " + matchs[i].teamB);
+                matchComboBox.Items.Add(matchs[i]);
             }
 
             foreach (bettor collection in this.storage.bettors)
             {
-                bettorComboBox.Items.Add(collection.name);
+                bettorComboBox.Items.Add(collection);
             }
         }
 
         public void outputs()
         {
-            foreach (bettor collection in this.storage.bettors)
-            {
-                bettorComboBox.Items.Add(collection.name);
-            }
+            
+        }
+
+        private void matchComboBox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            match selectedmatch = (match)matchComboBox.SelectedItem;
+            teamComboBox.Items.Clear();
+            teamComboBox.Items.Add(selectedmatch.teamA);
+            teamComboBox.Items.Add(selectedmatch.teamB);
+        }
+
+        private void bettorComboBox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            bettor selectedbettor = (bettor)bettorComboBox.SelectedItem;
+            int balance = selectedbettor.balance;
+            betterBalLabel.Text = Convert.ToString(balance);
         }
     }
 }
