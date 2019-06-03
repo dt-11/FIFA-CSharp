@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -25,7 +26,8 @@ namespace ProjectFifa
             string matchjson;
 
             matchjson = downloader.DownloadString("http://localhost/fifa/matchAPI.php?key=frikandelebakker");
-
+            Debug.WriteLine(matchjson);
+     
             match[] match = JsonConvert.DeserializeObject<match[]>(matchjson);
 
             for (int i = 0; i < match.Length; i++)
