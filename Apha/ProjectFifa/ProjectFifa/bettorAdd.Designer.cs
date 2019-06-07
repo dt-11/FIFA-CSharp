@@ -79,7 +79,7 @@
             this.Controls.Add(this.gokkerNameTextBox);
             this.Controls.Add(this.label1);
             this.Name = "bettorAdd";
-            this.Text = "gokkerAdd";
+            this.Text = "FIFA";
             this.ResumeLayout(false);
             this.PerformLayout();
 

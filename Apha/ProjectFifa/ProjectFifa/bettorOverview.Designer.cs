@@ -61,7 +61,7 @@
             this.Controls.Add(this.bettorListBox);
             this.Controls.Add(this.label1);
             this.Name = "bettorOverview";
-            this.Text = "bettorOverview";
+            this.Text = "FIFA";
             this.Load += new System.EventHandler(this.bettorOverview_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

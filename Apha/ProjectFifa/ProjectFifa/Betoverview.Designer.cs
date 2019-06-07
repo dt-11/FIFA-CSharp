@@ -111,7 +111,7 @@
             this.Controls.Add(this.poolButton);
             this.Controls.Add(this.selectPouleDomain);
             this.Name = "Betoverview";
-            this.Text = "Gokoverzicht";
+            this.Text = "FIFA";
             this.ResumeLayout(false);
             this.PerformLayout();
 

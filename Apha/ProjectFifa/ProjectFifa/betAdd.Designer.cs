@@ -239,7 +239,7 @@
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.label1);
             this.Name = "betForm";
-            this.Text = "betForm";
+            this.Text = "FIFA";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.teamBScore)).EndInit();

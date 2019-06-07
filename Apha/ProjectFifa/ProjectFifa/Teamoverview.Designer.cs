@@ -61,7 +61,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.teamListBox);
             this.Name = "Teamoverview";
-            this.Text = "overviewForm";
+            this.Text = "FIFA";
             this.Load += new System.EventHandler(this.overviewForm_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

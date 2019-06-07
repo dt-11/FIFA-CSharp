@@ -12,10 +12,10 @@ using Newtonsoft.Json;
 
 namespace ProjectFifa
 {
-    public partial class Form1 : Form
+    public partial class FIFA : Form
     {
         private bettorStorage storage;
-        public Form1()
+        public FIFA()
         {
             InitializeComponent();
             this.storage = new bettorStorage();
