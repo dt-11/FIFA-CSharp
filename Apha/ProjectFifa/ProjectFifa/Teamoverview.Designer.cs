@@ -28,10 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Teamoverview));
             this.teamListBox = new System.Windows.Forms.ListBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.teamOverviewToFormButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // teamListBox
@@ -41,7 +39,7 @@
             this.teamListBox.FormattingEnabled = true;
             this.teamListBox.Location = new System.Drawing.Point(12, 36);
             this.teamListBox.Name = "teamListBox";
-            this.teamListBox.Size = new System.Drawing.Size(184, 186);
+            this.teamListBox.Size = new System.Drawing.Size(184, 225);
             this.teamListBox.TabIndex = 0;
             // 
             // label1
@@ -55,24 +53,11 @@
             this.label1.TabIndex = 1;
             this.label1.Text = "Team Overview";
             // 
-            // teamOverviewToFormButton
-            // 
-            this.teamOverviewToFormButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.teamOverviewToFormButton.Location = new System.Drawing.Point(12, 227);
-            this.teamOverviewToFormButton.Name = "teamOverviewToFormButton";
-            this.teamOverviewToFormButton.Size = new System.Drawing.Size(75, 23);
-            this.teamOverviewToFormButton.TabIndex = 2;
-            this.teamOverviewToFormButton.Text = "Back";
-            this.teamOverviewToFormButton.UseVisualStyleBackColor = true;
-            this.teamOverviewToFormButton.Click += new System.EventHandler(this.overviewToFormButton_Click);
-            // 
             // Teamoverview
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.ClientSize = new System.Drawing.Size(314, 262);
-            this.Controls.Add(this.teamOverviewToFormButton);
+            this.ClientSize = new System.Drawing.Size(210, 271);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.teamListBox);
             this.Name = "Teamoverview";
@@ -87,6 +72,5 @@
 
         private System.Windows.Forms.ListBox teamListBox;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button teamOverviewToFormButton;
     }
 }

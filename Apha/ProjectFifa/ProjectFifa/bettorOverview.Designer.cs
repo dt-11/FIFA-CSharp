@@ -28,21 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.betOverviewToFormButton = new System.Windows.Forms.Button();
             this.bettorListBox = new System.Windows.Forms.ListBox();
             this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
-            // 
-            // betOverviewToFormButton
-            // 
-            this.betOverviewToFormButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.betOverviewToFormButton.Location = new System.Drawing.Point(12, 213);
-            this.betOverviewToFormButton.Name = "betOverviewToFormButton";
-            this.betOverviewToFormButton.Size = new System.Drawing.Size(75, 23);
-            this.betOverviewToFormButton.TabIndex = 35;
-            this.betOverviewToFormButton.Text = "Back";
-            this.betOverviewToFormButton.UseVisualStyleBackColor = true;
-            this.betOverviewToFormButton.Click += new System.EventHandler(this.betOverviewToFormButton_Click);
             // 
             // bettorListBox
             // 
@@ -51,7 +39,7 @@
             this.bettorListBox.FormattingEnabled = true;
             this.bettorListBox.Location = new System.Drawing.Point(12, 51);
             this.bettorListBox.Name = "bettorListBox";
-            this.bettorListBox.Size = new System.Drawing.Size(288, 147);
+            this.bettorListBox.Size = new System.Drawing.Size(288, 160);
             this.bettorListBox.TabIndex = 34;
             // 
             // label1
@@ -69,8 +57,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(321, 248);
-            this.Controls.Add(this.betOverviewToFormButton);
+            this.ClientSize = new System.Drawing.Size(321, 229);
             this.Controls.Add(this.bettorListBox);
             this.Controls.Add(this.label1);
             this.Name = "bettorOverview";
@@ -82,7 +69,6 @@
         }
 
         #endregion
-        private System.Windows.Forms.Button betOverviewToFormButton;
         private System.Windows.Forms.ListBox bettorListBox;
         private System.Windows.Forms.Label label1;
     }

@@ -32,8 +32,8 @@
             this.poolButton = new System.Windows.Forms.Button();
             this.selectPouleDomain = new System.Windows.Forms.DomainUpDown();
             this.label1 = new System.Windows.Forms.Label();
-            this.listBox1 = new System.Windows.Forms.ListBox();
-            this.betOverviewToFormButton = new System.Windows.Forms.Button();
+            this.betsListBox = new System.Windows.Forms.ListBox();
+            this.betButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label3
@@ -77,34 +77,35 @@
             this.label1.TabIndex = 23;
             this.label1.Text = "Gok Overzicht";
             // 
-            // listBox1
+            // betsListBox
             // 
-            this.listBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.betsListBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
-            this.listBox1.FormattingEnabled = true;
-            this.listBox1.Location = new System.Drawing.Point(12, 52);
-            this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(288, 199);
-            this.listBox1.TabIndex = 24;
+            this.betsListBox.FormattingEnabled = true;
+            this.betsListBox.Location = new System.Drawing.Point(12, 52);
+            this.betsListBox.Name = "betsListBox";
+            this.betsListBox.Size = new System.Drawing.Size(288, 225);
+            this.betsListBox.TabIndex = 24;
             // 
-            // betOverviewToFormButton
+            // betButton
             // 
-            this.betOverviewToFormButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.betOverviewToFormButton.Location = new System.Drawing.Point(16, 271);
-            this.betOverviewToFormButton.Name = "betOverviewToFormButton";
-            this.betOverviewToFormButton.Size = new System.Drawing.Size(75, 23);
-            this.betOverviewToFormButton.TabIndex = 26;
-            this.betOverviewToFormButton.Text = "Back";
-            this.betOverviewToFormButton.UseVisualStyleBackColor = true;
-            this.betOverviewToFormButton.Click += new System.EventHandler(this.betOverviewToFormButton_Click);
+            this.betButton.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
+            this.betButton.Location = new System.Drawing.Point(12, 286);
+            this.betButton.Name = "betButton";
+            this.betButton.Size = new System.Drawing.Size(75, 23);
+            this.betButton.TabIndex = 27;
+            this.betButton.Text = "Bet Start";
+            this.betButton.UseVisualStyleBackColor = true;
+            this.betButton.Click += new System.EventHandler(this.betButton_Click);
             // 
             // Betoverview
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(320, 306);
-            this.Controls.Add(this.betOverviewToFormButton);
-            this.Controls.Add(this.listBox1);
+            this.ClientSize = new System.Drawing.Size(320, 321);
+            this.Controls.Add(this.betButton);
+            this.Controls.Add(this.betsListBox);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.poolButton);
@@ -122,7 +123,7 @@
         private System.Windows.Forms.Button poolButton;
         private System.Windows.Forms.DomainUpDown selectPouleDomain;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.ListBox listBox1;
-        private System.Windows.Forms.Button betOverviewToFormButton;
+        private System.Windows.Forms.ListBox betsListBox;
+        private System.Windows.Forms.Button betButton;
     }
 }

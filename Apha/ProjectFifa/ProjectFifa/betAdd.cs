@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -23,41 +24,66 @@ namespace ProjectFifa
         }
         private void betButton_Click(object sender, EventArgs e)
         {
-            int bettorBalance = Convert.ToInt32(betterBalLabel.Text);
-            if (bettorComboBox.SelectedItem == null)
+            try
             {
-                MessageBox.Show("Selecteer een gokker.");
+                int bettorBalance = Convert.ToInt32(betterBalLabel.Text);
+                if (matchComboBox.Text == "")
+                {
+                    MessageBox.Show("Selecteer een Match.");
+                }
+                else if (teamComboBox.Text == "")
+                {
+                    MessageBox.Show("Selecteer een Team.");
+                }
+                else if (inzetNumbericUpDown.Value <= 0)
+                {
+                    MessageBox.Show("Zet een hoeveelheid in.");
+                }
+                else if (teamAScore.Value < 1 || teamBScore.Value < 1)
+                {
+                    MessageBox.Show("Vul de eindscore in.");
+                }
+                else if (inzetNumbericUpDown.Value > bettorBalance)
+                {
+                    MessageBox.Show("U heeft niet genoeg geld.");
+                }
+                else
+                {
+                    bet newbet = new bet();
+                    newbet.betMatch = (match)matchComboBox.SelectedItem;
+                    newbet.winningTeam = teamComboBox.Text;
+                    newbet.aScore = Convert.ToInt32(teamAScore.Value);
+                    newbet.bScore = Convert.ToInt32(teamAScore.Value);
+                    newbet.betAmount = Convert.ToInt32(inzetNumbericUpDown.Value);
+                    newbet.bettor = (bettor)bettorComboBox.SelectedItem;
+                    MessageBox.Show("Weddenschap aangemaakt.");
+
+                    File.WriteAllText("./bets/", JsonConvert.SerializeObject(newbet));
+
+                    // serialize JSON directly to a file
+                    using (StreamWriter file = File.CreateText("./bets/"))
+                    {
+                        JsonSerializer serializer = new JsonSerializer();
+                        serializer.Serialize(file, newbet);
+                    }
+                }
             }
-            else if (matchComboBox.Text == "")
+            catch (FormatException)
             {
-                MessageBox.Show("Selecteer een Match.");
+                MessageBox.Show("Selecteer een gokker");
             }
-            else if (teamComboBox.Text == "")
-            {
-                MessageBox.Show("Selecteer een Team.");
-            }
-            else if (inzetNumbericUpDown.Value < 0)
-            {
-                MessageBox.Show("Zet een hoeveelheid in.");
-            }
-            else if (bettorBalance < 1)
-            {
-                MessageBox.Show("U heeft niet genoeg geld.");
-            }
-            else
-            {
-                bet newbet = new bet();
-                newbet.betMatch = matchComboBox.Text;
-                newbet.winningTeam = teamComboBox.Text;
-                newbet.betAmount = Convert.ToInt32(inzetNumbericUpDown.Value);
-                newbet.bettor = (bettor)bettorComboBox.SelectedItem;
-                MessageBox.Show("Weddenschap aangemaakt.");
-            }
+            
         }
         public void inputs()
         {
-            inzetNumbericUpDown.Maximum = 6000;
+            inzetNumbericUpDown.Maximum = 2147483646;
             inzetNumbericUpDown.Minimum = 0;
+
+            teamAScore.Maximum = 2147483646;
+            teamAScore.Minimum = 0;
+
+            teamBScore.Maximum = 2147483646;
+            teamBScore.Minimum = 0;
 
             System.Net.WebClient downloader = new System.Net.WebClient();
             string matchjson;
@@ -90,7 +116,7 @@ namespace ProjectFifa
             teamComboBox.Items.Add(selectedmatch.teamB);
         }
 
-        private void bettorComboBox_SelectedIndexChanged(object sender, EventArgs e)
+        private void bettorComboBox_SelectedIndexChanged_1(object sender, EventArgs e)
         {
             bettor selectedbettor = (bettor)bettorComboBox.SelectedItem;
             int balance = selectedbettor.balance;
