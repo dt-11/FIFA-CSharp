@@ -68,12 +68,6 @@
     <Compile Include="FIFA.Designer.cs">
       <DependentUpon>FIFA.cs</DependentUpon>
     </Compile>
-    <Compile Include="Betoverview.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Betoverview.Designer.cs">
-      <DependentUpon>Betoverview.cs</DependentUpon>
-    </Compile>
     <Compile Include="bettor.cs" />
     <Compile Include="bettorAdd.cs">
       <SubType>Form</SubType>
@@ -100,9 +94,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FIFA.resx">
       <DependentUpon>FIFA.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Betoverview.resx">
-      <DependentUpon>Betoverview.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="bettorAdd.resx">
       <DependentUpon>bettorAdd.cs</DependentUpon>

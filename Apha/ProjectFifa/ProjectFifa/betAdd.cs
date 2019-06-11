@@ -15,12 +15,21 @@ namespace ProjectFifa
     public partial class betForm : Form
     {
         private bettorStorage storage;
+        private match selectedmatch;
 
         public betForm()
         {
             InitializeComponent();
             this.storage = new bettorStorage();
+            this.selectedmatch = new match();
             inputs();
+        }
+        private void matchComboBox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            match selectedmatch = (match)matchComboBox.SelectedItem;
+            teamComboBox.Items.Clear();
+            teamComboBox.Items.Add(selectedmatch.teamA);
+            teamComboBox.Items.Add(selectedmatch.teamB);
         }
         private void betButton_Click(object sender, EventArgs e)
         {
@@ -39,32 +48,65 @@ namespace ProjectFifa
                 {
                     MessageBox.Show("Zet een hoeveelheid in.");
                 }
-                else if (teamAScore.Value < 1 || teamBScore.Value < 1)
-                {
-                    MessageBox.Show("Vul de eindscore in.");
-                }
                 else if (inzetNumbericUpDown.Value > bettorBalance)
                 {
                     MessageBox.Show("U heeft niet genoeg geld.");
                 }
                 else
                 {
-                    bet newbet = new bet();
-                    newbet.betMatch = (match)matchComboBox.SelectedItem;
-                    newbet.winningTeam = teamComboBox.Text;
-                    newbet.aScore = Convert.ToInt32(teamAScore.Value);
-                    newbet.bScore = Convert.ToInt32(teamAScore.Value);
-                    newbet.betAmount = Convert.ToInt32(inzetNumbericUpDown.Value);
-                    newbet.bettor = (bettor)bettorComboBox.SelectedItem;
-                    MessageBox.Show("Weddenschap aangemaakt.");
-
-                    File.WriteAllText("./bets/", JsonConvert.SerializeObject(newbet));
-
-                    // serialize JSON directly to a file
-                    using (StreamWriter file = File.CreateText("./bets/"))
+                    int betamount = Convert.ToInt32(inzetNumbericUpDown.Value);
+                    string winner;
+                    if (selectedmatch.teamAscore > selectedmatch.teamBscore)
                     {
-                        JsonSerializer serializer = new JsonSerializer();
-                        serializer.Serialize(file, newbet);
+                        winner = selectedmatch.teamA;
+                        if (winner == teamComboBox.Text)
+                        {
+                            betamount =+ Convert.ToInt32(betterBalLabel.Text);
+                            betterBalLabel.Text = Convert.ToString(betamount);
+
+                            bet newbet = new bet();
+                            newbet.betMatch = (match)matchComboBox.SelectedItem;
+                            newbet.winningTeam = teamComboBox.Text;
+                            newbet.aScore = Convert.ToInt32(teamAScore.Value);
+                            newbet.bScore = Convert.ToInt32(teamAScore.Value);
+                            newbet.betAmount = Convert.ToInt32(inzetNumbericUpDown.Value);
+                            newbet.bettor = (bettor)bettorComboBox.SelectedItem;
+
+                            MessageBox.Show("U heeft gewonnen!");
+                        }
+                        else
+                        {
+                            betamount = -Convert.ToInt32(betterBalLabel.Text);
+                            betterBalLabel.Text = Convert.ToString(betamount);
+                            MessageBox.Show("U heeft verloren! Helaas");
+
+                        }
+                    }
+                    else
+                    {
+                        winner = selectedmatch.teamB;
+                        if (winner == teamComboBox.Text)
+                        {
+                            betamount = +Convert.ToInt32(betterBalLabel.Text);
+                            betterBalLabel.Text = Convert.ToString(betamount);
+
+                            bet newbet = new bet();
+                            newbet.betMatch = (match)matchComboBox.SelectedItem;
+                            newbet.winningTeam = teamComboBox.Text;
+                            newbet.aScore = Convert.ToInt32(teamAScore.Value);
+                            newbet.bScore = Convert.ToInt32(teamAScore.Value);
+                            newbet.betAmount = Convert.ToInt32(inzetNumbericUpDown.Value);
+                            newbet.bettor = (bettor)bettorComboBox.SelectedItem;
+
+                            MessageBox.Show("U heeft gewonnen!");
+                        }
+                        else
+                        {
+                            betamount = -Convert.ToInt32(betterBalLabel.Text);
+                            betterBalLabel.Text = Convert.ToString(betamount);
+                            MessageBox.Show("U heeft verloren! Helaas");
+
+                        }
                     }
                 }
             }
@@ -84,6 +126,7 @@ namespace ProjectFifa
 
             teamBScore.Maximum = 2147483646;
             teamBScore.Minimum = 0;
+
 
             System.Net.WebClient downloader = new System.Net.WebClient();
             string matchjson;
@@ -108,19 +151,18 @@ namespace ProjectFifa
             
         }
 
-        private void matchComboBox_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            match selectedmatch = (match)matchComboBox.SelectedItem;
-            teamComboBox.Items.Clear();
-            teamComboBox.Items.Add(selectedmatch.teamA);
-            teamComboBox.Items.Add(selectedmatch.teamB);
-        }
-
         private void bettorComboBox_SelectedIndexChanged_1(object sender, EventArgs e)
         {
             bettor selectedbettor = (bettor)bettorComboBox.SelectedItem;
             int balance = selectedbettor.balance;
             betterBalLabel.Text = Convert.ToString(balance);
+            
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            testlabel.Text = selectedmatch.teamA;
+
         }
     }
 }

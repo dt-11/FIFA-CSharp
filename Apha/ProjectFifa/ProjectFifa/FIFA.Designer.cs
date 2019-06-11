@@ -37,7 +37,6 @@
             this.saveToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.loadToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.overviewToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.betOverviewToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.teamOverviewToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.gokkerOverzichtToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.aanmakenToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
@@ -126,31 +125,23 @@
             // overviewToolStripMenuItem
             // 
             this.overviewToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.betOverviewToolStripMenuItem,
             this.teamOverviewToolStripMenuItem,
             this.gokkerOverzichtToolStripMenuItem});
             this.overviewToolStripMenuItem.Name = "overviewToolStripMenuItem";
             this.overviewToolStripMenuItem.Size = new System.Drawing.Size(82, 20);
             this.overviewToolStripMenuItem.Text = "Overzichten";
             // 
-            // betOverviewToolStripMenuItem
-            // 
-            this.betOverviewToolStripMenuItem.Name = "betOverviewToolStripMenuItem";
-            this.betOverviewToolStripMenuItem.Size = new System.Drawing.Size(202, 22);
-            this.betOverviewToolStripMenuItem.Text = "Weddenschap Overzicht";
-            this.betOverviewToolStripMenuItem.Click += new System.EventHandler(this.betOverviewToolStripMenuItem_Click);
-            // 
             // teamOverviewToolStripMenuItem
             // 
             this.teamOverviewToolStripMenuItem.Name = "teamOverviewToolStripMenuItem";
-            this.teamOverviewToolStripMenuItem.Size = new System.Drawing.Size(202, 22);
+            this.teamOverviewToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.teamOverviewToolStripMenuItem.Text = "Team Overzicht";
             this.teamOverviewToolStripMenuItem.Click += new System.EventHandler(this.teamOverviewToolStripMenuItem_Click);
             // 
             // gokkerOverzichtToolStripMenuItem
             // 
             this.gokkerOverzichtToolStripMenuItem.Name = "gokkerOverzichtToolStripMenuItem";
-            this.gokkerOverzichtToolStripMenuItem.Size = new System.Drawing.Size(202, 22);
+            this.gokkerOverzichtToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.gokkerOverzichtToolStripMenuItem.Text = "Gokker Overzicht";
             this.gokkerOverzichtToolStripMenuItem.Click += new System.EventHandler(this.gokkerOverzichtToolStripMenuItem_Click);
             // 
@@ -228,7 +219,6 @@
         private System.Windows.Forms.ToolStripMenuItem saveToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem loadToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem overviewToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem betOverviewToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem teamOverviewToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem gokkerOverzichtToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem aanmakenToolStripMenuItem1;

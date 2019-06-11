@@ -29,6 +29,8 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.button1 = new System.Windows.Forms.Button();
+            this.testlabel = new System.Windows.Forms.Label();
             this.teamBScore = new System.Windows.Forms.NumericUpDown();
             this.teamAScore = new System.Windows.Forms.NumericUpDown();
             this.label5 = new System.Windows.Forms.Label();
@@ -54,6 +56,8 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.button1);
+            this.groupBox1.Controls.Add(this.testlabel);
             this.groupBox1.Controls.Add(this.teamBScore);
             this.groupBox1.Controls.Add(this.teamAScore);
             this.groupBox1.Controls.Add(this.label5);
@@ -75,6 +79,25 @@
             this.groupBox1.Size = new System.Drawing.Size(294, 288);
             this.groupBox1.TabIndex = 9;
             this.groupBox1.TabStop = false;
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(242, 105);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 27;
+            this.button1.Text = "testbutton";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // testlabel
+            // 
+            this.testlabel.AutoSize = true;
+            this.testlabel.Location = new System.Drawing.Point(200, 105);
+            this.testlabel.Name = "testlabel";
+            this.testlabel.Size = new System.Drawing.Size(35, 13);
+            this.testlabel.TabIndex = 26;
+            this.testlabel.Text = "label7";
             // 
             // teamBScore
             // 
@@ -270,5 +293,7 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label teamBLabel;
         private System.Windows.Forms.Label teamALabel;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Label testlabel;
     }
 }

@@ -18,7 +18,11 @@ namespace ProjectFifa
 
         public string teamA { get; set; }
 
+        public int teamAscore { get; set; }
+
         public string teamB { get; set; }
+
+        public int teamBscore { get; set; }
 
         public override string ToString()
         {

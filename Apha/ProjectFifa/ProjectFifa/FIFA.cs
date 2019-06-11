@@ -74,12 +74,6 @@ namespace ProjectFifa
             Close();
         }
 
-        private void betOverviewToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            Betoverview betview = new Betoverview();
-            betview.ShowDialog();
-        }
-
         private void gokkerOverzichtToolStripMenuItem_Click(object sender, EventArgs e)
         {
             bettorOverview bettorview = new bettorOverview();
